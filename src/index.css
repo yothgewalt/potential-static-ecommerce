@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Seed Sans";
+    font-weight: 100;
+    font-style: normal;
+    src: url(./assets/font/LINESeedSansTH_W_Th.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Seed Sans";
+    font-weight: 400;
+    font-style: normal;
+    src: url(./assets/font/LINESeedSansTH_W_Rg.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Seed Sans";
+    font-weight: 700;
+    font-style: normal;
+    src: url(./assets/font/LINESeedSansTH_W_Bd.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Seed Sans";
+    font-weight: 800;
+    font-style: normal;
+    src: url(./assets/font/LINESeedSansTH_W_XBd.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Seed Sans";
+    font-weight: 900;
+    font-style: normal;
+    src: url(./assets/font/LINESeedSansTH_W_He.woff2) format("woff2");
+}
