@@ -25,6 +25,7 @@ module.exports = {
         },
         fontFamily: {
             seeds: ['Seed Sans'],
+            inter: ['Inter'],
         },
     },
     plugins: [],

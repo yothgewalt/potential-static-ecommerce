@@ -5,12 +5,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potential Static Ecommerce</title>
+    <title>Modular Dealership | The best option for you</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 
-<body>
-    <h1 class="text-3xl font-seeds font-bold">สวัสดี</h1>
+<body class="font-seeds antialiased">
+
+    <!-- Navigation Bar & Hero Section -->
+    <header class="sticky top-0 w-full h-16 font-inter glassmorphism z-50">
+        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
+            <div class="w-full h-full flex flex-row justify-between items-center text-white">
+                <a class="inline-flex items-center font-bold text-lg transition ease-in-out hover:opacity-80" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    MODULAR
+                </a>
+                <div class="flex flex-row space-x-4 justify-center items-center">
+                    <a href="#">Coupe</a>
+                    <a href="#">Sedan</a>
+                    <a href="#">Pickup</a>
+                    <a href="#">Others</a>
+                </div>
+                <div class="flex flex-row space-x-4 justify-center items-center">
+                    <a href="#">Search</a>
+                    <a href="#">Help</a>
+                    <a href="#" class="inline-flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        &nbsp;
+                        0
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="w-full h-screen relative flex flex-col">
+        <div class="container h-full absolute inset-0 mx-auto max-w-7xl overflow-hidden z-20">
+            <div class="w-full h-full flex flex-col text-white space-y-8 justify-center items-center">
+                <h1 class="font-inter font-bold text-7xl">New arrivals are here</h1>
+                <p class="w-[60rem] text-center text-2xl">The new arrivals have, well, newly arrived. Check out the
+                    latest
+                    options
+                    from our
+                    summer small-batch
+                    release while they're still in stock.</p>
+                <a href="#"
+                    class="px-6 py-3 rounded-lg font-medium text-lg text-black bg-white transition ease-in-out hover:bg-opacity-80">Shop
+                    New Arrivals</a>
+            </div>
+        </div>
+        <div class="w-full h-full absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <img src="./assets/image/porsche/porsche-taycan-4s.jpg" alt="porsche taycan 4s"
+            class="w-full h-screen select-none object-cover z-0" loading="lazy" />
+    </section>
+    <!-- End -->
+
+    <!-- Brand By Category -->
+    <section class="w-full h-[36rem] flex justify-center items-center bg-white">
+        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
+            <div class="w-full h-full flex flex-col space-y-4 justify-center items-center">
+                <div class="w-full flex flex-row justify-between items-center">
+                    <h1 class="font-inter font-bold text-2xl">Brand by category</h1>
+                    <a class="inline-flex items-center font-inter text-lg text-blue-500 transition ease-in-out hover:text-blue-800"
+                        href="#">
+                        Browse all categroies&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="grid grid-cols-5 gap-4 overflow-hidden">
+                    <div class="w-[15.2rem] h-[24rem]">
+                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
+                            <div
+                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
+                                <h1 class="font-inter font-semibold text-2xl text-white">Porsche</h1>
+                            </div>
+                            <img src="./assets/image/porsche/porsche-cayman.jpg" alt="porsche brand"
+                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="w-[15.2rem] h-[24rem]">
+                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
+                            <div
+                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
+                                <h1 class="font-inter font-semibold text-2xl text-white">Ferrari</h1>
+                            </div>
+                            <img src="./assets/image/ferrari/ferrari-sf90.jpg" alt="ferrari brand"
+                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="w-[15.2rem] h-[24rem]">
+                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
+                            <div
+                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
+                                <h1 class="font-inter font-semibold text-2xl text-white">McLaren</h1>
+                            </div>
+                            <img src="./assets/image/mclaren/mclaren-765lt-spider-5.jpg" alt="ferrari brand"
+                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="w-[15.2rem] h-[24rem]">
+                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
+                            <div
+                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
+                                <h1 class="font-inter font-semibold text-2xl text-white">Lamborghini</h1>
+                            </div>
+                            <img src="./assets/image/lamborghini/lamborghini-aventador.jpg" alt="ferrari brand"
+                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="w-[15.2rem] h-[24rem]">
+                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
+                            <div
+                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
+                                <h1 class="font-inter font-semibold text-2xl text-white">Mercedes Benz</h1>
+                            </div>
+                            <img src="./assets/image/mercedes-benz/mercedes-benz-chairman.jpg" alt="ferrari brand"
+                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Invitation Card -->
+    <section class="w-full h-[45rem] bg-white">
+        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
+            <div class="w-full h-[40rem] relative flex">
+                <div
+                    class="w-full h-full absolute inset-0 flex flex-col space-y-4 text-white justify-center items-center z-20">
+                    <h1 class="font-inter font-bold text-5xl">New arrivals are here</h1>
+                    <p class="w-[48rem] text-center text-xl">The new arrivals have, well, newly arrived. Check out the
+                        latest
+                        options
+                        from our
+                        summer small-batch
+                        release while they're still in stock.</p>
+                    <a href="#"
+                        class="px-6 py-3 rounded-lg font-medium text-lg text-black bg-white transition ease-in-out hover:bg-opacity-80">Shop
+                        Workshop</a>
+                </div>
+                <div class="w-full h-full absolute inset-0 rounded-xl bg-black bg-opacity-30 z-10"></div>
+                <img src="./assets/image/lamborghini/lamborghini-huracan.jpg" alt="porsche taycan 4s"
+                    class="w-full object-cover select-none rounded-xl min-h-0 z-0" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
 </body>
 
 </html>
