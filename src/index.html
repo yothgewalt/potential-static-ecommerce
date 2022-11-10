@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modular Dealership | The best option for you</title>
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <title>Modular - The best dealership option for you</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 
-<body class="font-seeds antialiased">
+<body class="h-auto font-seeds antialiased">
 
     <!-- Navigation Bar & Hero Section -->
-    <header class="sticky top-0 w-full h-16 font-inter glassmorphism z-50">
-        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
+    <header class="sticky top-0 left-0 w-full h-12 font-inter glassmorphism z-50 1024px:h-16">
+        <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div class="w-full h-full flex flex-row justify-between items-center text-white">
-                <a class="inline-flex items-center font-bold text-lg transition ease-in-out hover:opacity-80" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <a class="inline-flex items-center font-bold select-none text-xs transition ease-in-out hover:opacity-80 360px:text-sm 768px:text-base 912px:text-lg"
+                    href="#">
+                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px]"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd"
                             d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
                             clip-rule="evenodd" />
                     </svg>
                     MODULAR
                 </a>
-                <div class="flex flex-row space-x-4 justify-center items-center">
+                <div class="hidden flex-row space-x-4 justify-center items-center 1024px:flex">
                     <a href="#">Coupe</a>
                     <a href="#">Sedan</a>
                     <a href="#">Pickup</a>
                     <a href="#">Others</a>
                 </div>
-                <div class="flex flex-row space-x-4 justify-center items-center">
+                <div class="hidden flex-row space-x-4 justify-center items-center 1024px:flex">
                     <a href="#">Search</a>
                     <a href="#">Help</a>
                     <a href="#" class="inline-flex items-center">
@@ -42,21 +44,39 @@
                         0
                     </a>
                 </div>
+                <button type="menu" id="navigation-menu" class="block 1024px:hidden">
+                    <svg class="w-[20px] h-[20px] 360px:w-[24px] 360px:h-[24px] 768px:w-[28px] 768px:h-[28px]"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
     <section class="w-full h-screen relative flex flex-col">
-        <div class="container h-full absolute inset-0 mx-auto max-w-7xl overflow-hidden z-20">
-            <div class="w-full h-full flex flex-col text-white space-y-8 justify-center items-center">
-                <h1 class="font-inter font-bold text-7xl">New arrivals are here</h1>
-                <p class="w-[60rem] text-center text-2xl">The new arrivals have, well, newly arrived. Check out the
-                    latest
-                    options
-                    from our
-                    summer small-batch
-                    release while they're still in stock.</p>
+        <div class="container h-full absolute inset-0 px-3 mx-auto max-w-7xl overflow-hidden z-20 1024px:px-0">
+            <div class="w-full h-full flex flex-col text-white space-y-5 justify-center items-center 912px:space-y-8">
+                <div
+                    class="flex flex-col text-white space-y-1.5 justify-center items-center 375px:space-y-2 912px:space-y-4">
+                    <h1 class="font-inter font-bold text-2xl 375px:text-3xl 768px:text-5xl 912px:text-7xl">New arrivals
+                        are here</h1>
+                    <p
+                        class="w-[16.8rem] text-center text-xs text-gray-300 375px:w-[20rem] 375px:text-sm 768px:w-[30rem] 768px:text-lg 912px:w-[60rem] 912px:text-2xl">
+                        The new
+                        arrivals
+                        have, well,
+                        newly arrived.
+                        Check out the
+                        latest
+                        options
+                        from our
+                        summer small-batch
+                        release while they're still in stock.</p>
+                </div>
                 <a href="#"
-                    class="px-6 py-3 rounded-lg font-medium text-lg text-black bg-white transition ease-in-out hover:bg-opacity-80">Shop
+                    class="px-4 py-2 rounded-lg font-medium text-xs text-black bg-white transition ease-in-out hover:bg-opacity-80 375px:text-sm 768px:text-base 912px:text-lg 912px:px-6 912px:py-3">Shop
                     New Arrivals</a>
             </div>
         </div>
@@ -67,12 +87,17 @@
     <!-- End -->
 
     <!-- Brand By Category -->
-    <section class="w-full h-[36rem] flex justify-center items-center bg-white">
-        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
-            <div class="w-full h-full flex flex-col space-y-4 justify-center items-center">
+    <section
+        class="w-full h-[28rem] flex justify-center items-center bg-white 360px:h-[39.5rem] 390px:h-[42.5rem] 412px:h-[45rem] 540px:h-[56.5rem] 768px:h-[59rem] 912px:h-[67rem] 1024px:h-[35rem]">
+        <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+            <div
+                class="w-full h-full flex flex-col space-y-4 justify-center items-center 912px:space-y-8 1024px:space-y-10">
                 <div class="w-full flex flex-row justify-between items-center">
-                    <h1 class="font-inter font-bold text-2xl">Brand by category</h1>
-                    <a class="inline-flex items-center font-inter text-lg text-blue-500 transition ease-in-out hover:text-blue-800"
+                    <h1
+                        class="font-inter font-bold text-sm 360px:text-lg 768px:text-2xl 912px:text-3xl 1024px:text-2xl">
+                        Brand by
+                        category</h1>
+                    <a class="hidden items-center font-inter text-lg text-blue-500 transition ease-in-out hover:text-blue-800 768px:inline-flex 912px:text-xl 1024px:text-lg"
                         href="#">
                         Browse all categroies&nbsp;
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -80,60 +105,20 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
-
+                    </a>
+                    <a class="inline-flex items-center font-inter text-xs text-blue-500 transition ease-in-out hover:text-blue-800 360px:text-sm 768px:hidden"
+                        href="#">
+                        Browses&nbsp;
+                        <svg class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                        </svg>
                     </a>
                 </div>
-                <div class="grid grid-cols-5 gap-4 overflow-hidden">
-                    <div class="w-[15.2rem] h-[24rem]">
-                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
-                            <div
-                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
-                                <h1 class="font-inter font-semibold text-2xl text-white">Porsche</h1>
-                            </div>
-                            <img src="./assets/image/porsche/porsche-cayman.jpg" alt="porsche brand"
-                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
-                        </a>
-                    </div>
-                    <div class="w-[15.2rem] h-[24rem]">
-                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
-                            <div
-                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
-                                <h1 class="font-inter font-semibold text-2xl text-white">Ferrari</h1>
-                            </div>
-                            <img src="./assets/image/ferrari/ferrari-sf90.jpg" alt="ferrari brand"
-                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
-                        </a>
-                    </div>
-                    <div class="w-[15.2rem] h-[24rem]">
-                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
-                            <div
-                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
-                                <h1 class="font-inter font-semibold text-2xl text-white">McLaren</h1>
-                            </div>
-                            <img src="./assets/image/mclaren/mclaren-765lt-spider-5.jpg" alt="ferrari brand"
-                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
-                        </a>
-                    </div>
-                    <div class="w-[15.2rem] h-[24rem]">
-                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
-                            <div
-                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
-                                <h1 class="font-inter font-semibold text-2xl text-white">Lamborghini</h1>
-                            </div>
-                            <img src="./assets/image/lamborghini/lamborghini-aventador.jpg" alt="ferrari brand"
-                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
-                        </a>
-                    </div>
-                    <div class="w-[15.2rem] h-[24rem]">
-                        <a class="w-full h-full relative flex transition ease-in-out hover:opacity-90" href="#">
-                            <div
-                                class="w-full h-full pb-5 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10">
-                                <h1 class="font-inter font-semibold text-2xl text-white">Mercedes Benz</h1>
-                            </div>
-                            <img src="./assets/image/mercedes-benz/mercedes-benz-chairman.jpg" alt="ferrari brand"
-                                class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
-                        </a>
-                    </div>
+                <div id="brand-by-category"
+                    class="w-full h-auto grid grid-cols-2 gap-2 justify-items-center overflow-hidden 768px:h-auto 768px:grid-cols-3 912px:h-auto 912px:grid-cols-3 912px:gap-3 1024px:h-[24.8rem] 1024px:grid-cols-5">
+                    <!-- Brand by category has been implemented by JavaScript -->
                 </div>
             </div>
         </div>
@@ -141,23 +126,35 @@
     <!-- End -->
 
     <!-- Invitation Card -->
-    <section class="w-full h-[45rem] bg-white">
-        <div class="container h-full mx-auto max-w-7xl overflow-hidden">
-            <div class="w-full h-[40rem] relative flex">
+    <section class="w-full h-[12.5rem] bg-white 540px:h-[18.5rem] 768px:h-[28.8rem] 912px:h-[33rem] 1024px:h-[45rem]">
+        <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+            <div
+                class="w-full h-[10rem] relative flex 540px:h-[16rem] 768px:h-[26rem] 912px:h-[28rem] 1024px:h-[40rem]">
                 <div
-                    class="w-full h-full absolute inset-0 flex flex-col space-y-4 text-white justify-center items-center z-20">
-                    <h1 class="font-inter font-bold text-5xl">New arrivals are here</h1>
-                    <p class="w-[48rem] text-center text-xl">The new arrivals have, well, newly arrived. Check out the
-                        latest
-                        options
-                        from our
-                        summer small-batch
-                        release while they're still in stock.</p>
+                    class="w-full h-full absolute inset-0 flex flex-col space-y-4 text-white justify-center items-center z-20 768px:space-y-6 912px:space-y-8">
+                    <div class="flex flex-col space-y-1 text-white justify-center items-center">
+                        <h1 class="font-inter font-bold text-sm 360px:text-lg 768px:text-4xl 912px:text-5xl">New
+                            arrivals are here
+                        </h1>
+                        <p
+                            class="w-[12rem] text-center text-[0.55rem] leading-[0.70rem] text-gray-300 360px:w-[18rem] 360px:text-xs 768px:w-[34rem] 768px:text-base 912px:w-[48rem] 912px:text-xl">
+                            The
+                            new
+                            arrivals
+                            have, well,
+                            newly arrived.
+                            Check out the
+                            latest
+                            options
+                            from our
+                            summer small-batch
+                            release while they're still in stock.</p>
+                    </div>
                     <a href="#"
-                        class="px-6 py-3 rounded-lg font-medium text-lg text-black bg-white transition ease-in-out hover:bg-opacity-80">Shop
+                        class="px-3 py-1 rounded-lg font-medium text-[0.50rem] text-black bg-white transition ease-in-out hover:bg-opacity-90 360px:px-4 360px:py-1.5 360px:text-[0.64rem] 768px:text-base 912px:px-6 912px:py-3 912px:text-lg">Shop
                         Workshop</a>
                 </div>
-                <div class="w-full h-full absolute inset-0 rounded-xl bg-black bg-opacity-30 z-10"></div>
+                <div class="w-full h-full absolute inset-0 rounded-xl bg-black bg-opacity-40 z-10"></div>
                 <img src="./assets/image/lamborghini/lamborghini-huracan.jpg" alt="porsche taycan 4s"
                     class="w-full object-cover select-none rounded-xl min-h-0 z-0" loading="lazy" />
             </div>
@@ -165,6 +162,185 @@
     </section>
     <!-- End -->
 
+    <!-- Shop by Parts -->
+    <section
+        class="w-full h-[72.5rem] bg-white 360px:h-[85.4rem] 390px:h-[94.5rem] 412px:h-[97.5rem] 540px:h-[28.6rem] 768px:h-[37.3rem] 820px:h-[38rem] 912px:h-[49rem]">
+        <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full h-full flex flex-col space-y-1 justify-start items-start 912px:space-y-5">
+                <div class="flex flex-col space-y-1 justify-start items-start">
+                    <h1
+                        class="font-inter font-bold text-sm 360px:text-base 375px:text-lg 768px:text-xl 912px:text-3xl 1024px:text-2xl">
+                        Shop by Parts
+                    </h1>
+                    <p
+                        class="font-inter font-light text-[0.55rem] text-gray-600 360px:text-xs 375px:text-[0.82rem] 768px:text-base 912px:text-xl 1024px:text-lg">
+                        Each
+                        season, we
+                        collaborate with world-class
+                        designers to
+                        create a
+                        collection
+                        inspired by the
+                        natural world.</p>
+                </div>
+                <div id="shop-by-parts"
+                    class="grid grid-cols-1 gap-0 justify-items-center content-center 540px:grid-cols-3 540px:gap-2 768px:gap-1">
+                    <!-- Shop by parts has been implemented by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Shop by Collection -->
+    <section class="w-full h-[19rem] bg-white 912px:h-[29rem] 1024px:h-[34rem]">
+        <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full h-[16rem] relative flex rounded-xl bg-stone-100 912px:h-[24rem] 1024px:h-[28rem]">
+                <img src="./assets/image/mercedes-benz/mercedes-benz-amg.jpg" alt="mercedes benz amg"
+                    class="w-full h-full object-cover select-none rounded-xl z-0" loading="lazy" />
+                <div
+                    class="w-full h-full p-5 absolute inset-y-0 flex flex-col font-inter text-white justify-between items-center rounded-xl backdrop-blur left-0 bg-black bg-opacity-70 912px:w-[20rem] 912px:rounded-l-xl 912px:rounded-r-none 1024px:w-[26rem]">
+                    <div class="w-full flex flex-col space-y-1 justify-start items-start">
+                        <h1 class="font-semibold text-lg 768px:text-2xl">Workspace Collection</h1>
+                        <p class="font-light text-xs text-gray-300 912px:text-lg">Upgrade your desk with objects that
+                            keep you
+                            organized and
+                            clear-minded.</p>
+                    </div>
+                    <a class="w-full py-2 border border-gray-400 text-[0.65rem] rounded-lg font-semibold text-center transition ease-in-out bg-white bg-opacity-0 hover:bg-opacity-10 768px:py-3 768px:text-xs 912px:py-4 912px:text-base"
+                        href="#">
+                        View the collection
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer Bar -->
+    <footer class="w-full h-[105rem] bg-white 540px:h-[83.2rem] 768px:h-[84.3rem] 912px:h-[66.8rem] 1024px:h-[57.5rem]">
+        <div class="container h-full mx-auto px-3 border-t max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="my-16 w-full h-full grid grid-cols-2 gap-y-20 gap-x-[5rem] font-normal text-base text-gray-500 justify-items-start 768px:w-[30rem] 768px:gap-x-[12rem] 912px:w-full 912px:my-20 912px:grid-cols-4 912px:gap-y-0 912px:text-lg 912px:space-y-0">
+                    <div id="products" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Product elements that's injected by JavaScript -->
+                    </div>
+                    <div id="customer-service"
+                        class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Customer service elements that's injected by JavaScript -->
+                    </div>
+                    <div id="company" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Company elements that's injected by JavaScript -->
+                    </div>
+                    <div id="legal" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Legal elements that's injected by JavaScript -->
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-8 justify-center items-center">
+                    <div class="w-full grid grid-cols-1 gap-3 912px:grid-cols-2 912px:gap-20">
+                        <div
+                            class="w-full h-[14.5rem] py-6 px-6 rounded-xl bg-[#f3f4f6] overflow-hidden 768px:h-[15.5rem] 912px:w-[29.5rem] 912px:h-[22rem] 912px:py-14 912px:px-28 1024px:w-[39rem] 1024px:h-[18rem] 1024px:py-14 1024px:px-28">
+                            <div class="w-full h-full flex-col font-inter space-y-10 justify-center items-center">
+                                <div
+                                    class="flex flex-col space-y-1 justify-center items-center 912px:justify-center 912px:items-centejustify-center 1024px:justify-start 1024px:items-start">
+                                    <h1
+                                        class="font-semibold text-center text-base text-black 768px:text-lg 912px:text-center 1024px:text-start">
+                                        Sign up for
+                                        our
+                                        newsletter</h1>
+                                    <p
+                                        class="font-light text-center text-[0.66rem] text-gray-600 360px:text-sm 912px:text-base 912px:text-center 1024px:text-start">
+                                        The
+                                        latest news,
+                                        articles, and
+                                        resources, sent
+                                        to
+                                        your inbox
+                                        weekly.</p>
+                                </div>
+                                <form
+                                    class="flex flex-col space-x-0 space-y-2 1024px:flex-row 1024px:space-x-4 1024px:space-y-0"
+                                    method="post">
+                                    <input type="email" name="email"
+                                        class="w-full px-2 py-2 rounded-lg border text-[0.60rem] shadow-sm outline-none 360px:text-xs 412px:text-sm 768px:text-base"
+                                        placeholder="Your email address" autocomplete="off" required />
+                                    <input type="submit" name="submit"
+                                        class="px-2 py-2 cursor-pointer text-xs rounded-lg bg-black text-white transition ease-in-out hover:bg-opacity-75 768px:py-3 768px:text-base 912px:px-5 912px:py-2"
+                                        value="Contact" />
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full h-[18rem] relative flex justify-center items-center rounded-xl bg-black overflow-hidden 912px:h-full 1024px:h-[18rem]">
+                            <div
+                                class="py-14 px-8 w-full h-full absolute inset-0 flex flex-col space-y-1.5 text-white justify-center items-center z-20 912px:py-14 912px:px-28">
+                                <h1
+                                    class="font-inter font-bold text-xl 360px:text-2xl 768px:text-4xl 912px:text-xl 1024px:text-3xl">
+                                    Get early access
+                                </h1>
+                                <p
+                                    class="w-auto text-center text-xs text-gray-300 360px:text-sm 768px:text-2xl 912px:w-[23rem] 912px:text-base 1024px:text-lg">
+                                    Did
+                                    you sign up to the
+                                    newsletter?
+                                    If
+                                    so, use the
+                                    keyword we sent you to get access. <a
+                                        class="inline-flex items-center font-semibold text-[0.70rem] text-white transition ease-in-out hover:text-opacity-75 360px:text-sm 768px:text-xl 912px:text-base"
+                                        href="#">Go now&nbsp;<svg
+                                            class="w-[14px] h-[14px] 360px:w-[15px] 360px:h-[15px] 768px:w-[20px] 768px:h-[20px] 912px:w-[22px] 912px:h-[22px] 1024px:w-[24px] 1024px:h-[24px] text-white"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        </svg>
+                                    </a></p>
+                            </div>
+                            <div class="w-full h-full absolute inset-0 bg-black rounded-xl bg-opacity-50 z-10"></div>
+                            <img src="./assets/image/porsche/porsche-interior.jpg" alt="porsche interior"
+                                class="w-full h-full object-cover select-none rounded-xl z-0" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-row font-inter font-light text-gray-600 justify-between items-center">
+                        <p class="text-xs 912px:text-base">&copy; 2022 All Rights Reserved</p>
+                        <div class="flex flex-row divide-x space-x-6 justify-center items-center 912px:space-x-8">
+                            <div
+                                class="hidden flex-row space-x-8 justify-center items-center 768px:space-x-6 768px:text-xs 768px:flex 912px:text-base">
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">Accessibility</a>
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">Privacy</a>
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">Teams</a>
+                            </div>
+                            <a href="#" class="mx-2">
+                                <img src="./assets/image/utility/thailand-flag.svg" alt="thailand" width="18"
+                                    height="18" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End -->
+
+    <script type="module">
+        import {
+            onCategoryRender,
+            onPartRender,
+            onProductHyperlinkRender,
+            onCustomerServiceHyperlinkRender,
+            onCompanyHyperlinkRender,
+            onLegalHyperlinkRender,
+        } from './components/landing-page-render-engine.js';
+
+        window.addEventListener('load', (event) => {
+            onCategoryRender();
+            onPartRender();
+            onProductHyperlinkRender();
+            onCustomerServiceHyperlinkRender();
+            onCompanyHyperlinkRender();
+            onLegalHyperlinkRender();
+        });
+    </script>
 </body>
 
 </html>

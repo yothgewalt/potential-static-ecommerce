@@ -1,5 +1,6 @@
 {
     "name": "potential-static-ecommerce",
+    "license": "MIT",
     "source": "src/index.html",
     "scripts": {
         "start": "parcel",
