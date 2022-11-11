@@ -9,15 +9,15 @@
     <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 
-<body class="h-auto font-seeds antialiased">
+<body class="h-auto antialiased">
 
     <!-- Navigation Bar & Hero Section -->
-    <header class="sticky top-0 left-0 w-full h-12 font-inter glassmorphism z-50 1024px:h-16">
+    <header class="sticky top-0 left-0 w-full h-12 font-seeds glassmorphism z-50 1024px:h-16">
         <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div class="w-full h-full flex flex-row justify-between items-center text-white">
-                <a class="inline-flex items-center font-bold select-none text-xs transition ease-in-out hover:opacity-80 360px:text-sm 768px:text-base 912px:text-lg"
+                <a class="inline-flex items-center font-inter font-bold select-none text-xs transition ease-in-out hover:opacity-80 360px:text-sm 768px:text-base 912px:text-lg"
                     href="#">
-                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px]"
+                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px] animate-spin"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd"
                             d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
@@ -25,17 +25,32 @@
                     </svg>
                     MODULAR
                 </a>
-                <div class="hidden flex-row space-x-4 justify-center items-center 1024px:flex">
-                    <a href="#">Coupe</a>
-                    <a href="#">Sedan</a>
-                    <a href="#">Pickup</a>
-                    <a href="#">Others</a>
+                <div class="hidden flex-row font-seeds space-x-4 justify-center items-center 1024px:flex">
+                    <a href="#"
+                        class="inline-flex items-center transition ease-in-out hover:text-stone-400">แบรนด์รถยนต์&nbsp;<svg
+                            class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="transition ease-in-out hover:text-stone-400">แต่งรถยนต์</a>
+                    <a href="#" class="transition ease-in-out hover:text-stone-400">บริการซื้อขาย</a>
+                    <a href="#" class="transition ease-in-out hover:text-stone-400">ศูนย์ช่วยเหลือ</a>
                 </div>
-                <div class="hidden flex-row space-x-4 justify-center items-center 1024px:flex">
-                    <a href="#">Search</a>
-                    <a href="#">Help</a>
-                    <a href="#" class="inline-flex items-center">
+                <div class="hidden flex-row font-seeds space-x-4 justify-center items-center 1024px:flex">
+                    <a href="./pages/registration.html" class="text-stone-300">คุณยังไม่มีบัญชี?</a>
+                    <a href="./pages/authentication.html"
+                        class="inline-flex items-center transition ease-in-out hover:text-stone-300">
+                        เข้าสู่ระบบ
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="inline-flex items-center">
+                        <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] text-gray-300"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -60,24 +75,25 @@
             <div class="w-full h-full flex flex-col text-white space-y-5 justify-center items-center 912px:space-y-8">
                 <div
                     class="flex flex-col text-white space-y-1.5 justify-center items-center 375px:space-y-2 912px:space-y-4">
-                    <h1 class="font-inter font-bold text-2xl 375px:text-3xl 768px:text-5xl 912px:text-7xl">New arrivals
-                        are here</h1>
+                    <h1 class="font-seeds font-bold text-2xl 375px:text-3xl 768px:text-5xl 912px:text-7xl">
+                        การเดินทางรูปแบบใหม่</h1>
                     <p
                         class="w-[16.8rem] text-center text-xs text-gray-300 375px:w-[20rem] 375px:text-sm 768px:w-[30rem] 768px:text-lg 912px:w-[60rem] 912px:text-2xl">
-                        The new
-                        arrivals
-                        have, well,
-                        newly arrived.
-                        Check out the
-                        latest
-                        options
-                        from our
-                        summer small-batch
-                        release while they're still in stock.</p>
+                        พวกเรารับพร้อมที่บริการด้านการขายรถยนต์ให้คุณแบบเต็มความสามารถ
+                        พร้อมด้วยแบรนด์รถยนต์มากมายที่ให้คุณเลือกได้ตามใจชอบและยังมีบริการของแต่งรถยนต์ที่คุณสามารถเลือกได้เอง
+                    </p>
                 </div>
                 <a href="#"
-                    class="px-4 py-2 rounded-lg font-medium text-xs text-black bg-white transition ease-in-out hover:bg-opacity-80 375px:text-sm 768px:text-base 912px:text-lg 912px:px-6 912px:py-3">Shop
-                    New Arrivals</a>
+                    class="px-4 py-2 rounded-lg font-medium text-xs text-black bg-white transition ease-in-out animate-pulse hover:bg-opacity-80 375px:text-sm 768px:text-base 912px:text-lg 912px:px-6 912px:py-3">ค้นหารถยนต์ของคุณ</a>
+                <div class="flex flex-col space-y-3 justify-center items-center">
+                    <h1 class="font-semibold text-stone-300">เลื่อนลงข้างล่าง</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-stone-300 animate-bounce">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    </svg>
+
+                </div>
             </div>
         </div>
         <div class="w-full h-full absolute inset-0 bg-black bg-opacity-60 z-10"></div>
@@ -91,24 +107,22 @@
         class="w-full h-[28rem] flex justify-center items-center bg-white 360px:h-[39.5rem] 390px:h-[42.5rem] 412px:h-[45rem] 540px:h-[56.5rem] 768px:h-[59rem] 912px:h-[67rem] 1024px:h-[35rem]">
         <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div
-                class="w-full h-full flex flex-col space-y-4 justify-center items-center 912px:space-y-8 1024px:space-y-10">
+                class="w-full h-full flex flex-col space-y-4 justify-center items-center 912px:space-y-8 1024px:space-y-6">
                 <div class="w-full flex flex-row justify-between items-center">
-                    <h1
-                        class="font-inter font-bold text-sm 360px:text-lg 768px:text-2xl 912px:text-3xl 1024px:text-2xl">
-                        Brand by
-                        category</h1>
-                    <a class="hidden items-center font-inter text-lg text-blue-500 transition ease-in-out hover:text-blue-800 768px:inline-flex 912px:text-xl 1024px:text-lg"
+                    <h1 class="font-seeds font-bold text-sm 360px:text-lg 768px:text-2xl 912px:text-3xl">
+                        หมวดหมู่แบรนด์</h1>
+                    <a class="hidden items-center font-seeds text-lg text-blue-500 transition ease-in-out hover:text-blue-800 768px:inline-flex 912px:text-xl"
                         href="#">
-                        Browse all categroies&nbsp;
+                        เรียกดูหมวดหมู่ทั้งหมด&nbsp;
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
                     </a>
-                    <a class="inline-flex items-center font-inter text-xs text-blue-500 transition ease-in-out hover:text-blue-800 360px:text-sm 768px:hidden"
+                    <a class="inline-flex items-center font-seeds text-xs text-blue-500 transition ease-in-out hover:text-blue-800 360px:text-sm 768px:hidden"
                         href="#">
-                        Browses&nbsp;
+                        เรียกดู&nbsp;
                         <svg class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -126,37 +140,32 @@
     <!-- End -->
 
     <!-- Invitation Card -->
-    <section class="w-full h-[12.5rem] bg-white 540px:h-[18.5rem] 768px:h-[28.8rem] 912px:h-[33rem] 1024px:h-[45rem]">
+    <section
+        class="w-full h-[12.5rem] bg-white 360px:h-[14.5rem] 375px:h-[14rem] 540px:h-[18.5rem] 768px:h-[28.8rem] 912px:h-[33rem] 1024px:h-[45rem]">
         <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div
-                class="w-full h-[10rem] relative flex 540px:h-[16rem] 768px:h-[26rem] 912px:h-[28rem] 1024px:h-[40rem]">
+                class="w-full h-[10rem] relative flex 360px:h-[12rem] 540px:h-[16rem] 768px:h-[26rem] 912px:h-[28rem] 1024px:h-[40rem]">
                 <div
                     class="w-full h-full absolute inset-0 flex flex-col space-y-4 text-white justify-center items-center z-20 768px:space-y-6 912px:space-y-8">
                     <div class="flex flex-col space-y-1 text-white justify-center items-center">
-                        <h1 class="font-inter font-bold text-sm 360px:text-lg 768px:text-4xl 912px:text-5xl">New
-                            arrivals are here
+                        <h1 class="font-seeds font-bold text-sm 360px:text-lg 768px:text-4xl 912px:text-5xl">
+                            แบรนด์รถยนต์ยอดนิยม
                         </h1>
                         <p
                             class="w-[12rem] text-center text-[0.55rem] leading-[0.70rem] text-gray-300 360px:w-[18rem] 360px:text-xs 768px:w-[34rem] 768px:text-base 912px:w-[48rem] 912px:text-xl">
-                            The
-                            new
-                            arrivals
-                            have, well,
-                            newly arrived.
-                            Check out the
-                            latest
-                            options
-                            from our
-                            summer small-batch
-                            release while they're still in stock.</p>
+                            แบรนด์รถยนต์ยอดนิยมเรามีพร้อมให้บริการคุณทั้งก่อนซื้อขายและหลังซื้อขายไปแล้ว
+                            พร้อมทั้งโปรโมชั่นที่คุณสามารถรับได้เลยหลังจากซื้อรถยนต์จากทางเราไปและมีประกันคุ้มครองสูงสุด
+                            5 ปี</p>
                     </div>
                     <a href="#"
-                        class="px-3 py-1 rounded-lg font-medium text-[0.50rem] text-black bg-white transition ease-in-out hover:bg-opacity-90 360px:px-4 360px:py-1.5 360px:text-[0.64rem] 768px:text-base 912px:px-6 912px:py-3 912px:text-lg">Shop
-                        Workshop</a>
+                        class="px-3 py-1 rounded-lg font-medium text-[0.50rem] text-black bg-white transition ease-in-out hover:bg-opacity-90 360px:px-4 360px:py-1.5 360px:text-[0.64rem] 768px:text-base 912px:px-6 912px:py-3 912px:text-lg">ค้นหารถยนต์ของคุณ</a>
                 </div>
                 <div class="w-full h-full absolute inset-0 rounded-xl bg-black bg-opacity-40 z-10"></div>
-                <img src="./assets/image/lamborghini/lamborghini-huracan.jpg" alt="porsche taycan 4s"
-                    class="w-full object-cover select-none rounded-xl min-h-0 z-0" loading="lazy" />
+                <video autoplay loop preload="none" muted class="w-full object-cover rounded-xl">
+                    <source src="./assets/video/lamborghini-aventador-svj.mp4" type="video/mp4" />
+                </video>
+                <!-- <img src="./assets/image/lamborghini/lamborghini-huracan.jpg" alt="porsche taycan 4s"
+                    class="w-full object-cover select-none rounded-xl min-h-0 z-0" loading="lazy" /> -->
             </div>
         </div>
     </section>
@@ -164,24 +173,17 @@
 
     <!-- Shop by Parts -->
     <section
-        class="w-full h-[72.5rem] bg-white 360px:h-[85.4rem] 390px:h-[94.5rem] 412px:h-[97.5rem] 540px:h-[28.6rem] 768px:h-[37.3rem] 820px:h-[38rem] 912px:h-[49rem]">
+        class="w-full h-[72.5rem] bg-white 360px:h-[85.4rem] 375px:h-[92.5rem] 390px:h-[94.5rem] 412px:h-[97.5rem] 540px:h-[28.6rem] 768px:h-[37.3rem] 820px:h-[38rem] 912px:h-[49rem]">
         <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div class="w-full h-full flex flex-col space-y-1 justify-start items-start 912px:space-y-5">
                 <div class="flex flex-col space-y-1 justify-start items-start">
-                    <h1
-                        class="font-inter font-bold text-sm 360px:text-base 375px:text-lg 768px:text-xl 912px:text-3xl 1024px:text-2xl">
-                        Shop by Parts
+                    <h1 class="font-seeds font-bold text-sm 360px:text-base 375px:text-lg 768px:text-xl 912px:text-3xl">
+                        สินค้าแต่งรถยนต์
                     </h1>
                     <p
-                        class="font-inter font-light text-[0.55rem] text-gray-600 360px:text-xs 375px:text-[0.82rem] 768px:text-base 912px:text-xl 1024px:text-lg">
-                        Each
-                        season, we
-                        collaborate with world-class
-                        designers to
-                        create a
-                        collection
-                        inspired by the
-                        natural world.</p>
+                        class="font-seeds font-normal text-[0.55rem] text-gray-500 360px:text-xs 375px:text-[0.82rem] 768px:text-base 912px:text-xl">
+                        ในแต่ละสินค้าแต่งรถยนต์จากทางเรานั้นมีมากมายครอบคลุมเกือบทุกแบรนด์ยกเว้น *เฟอร์รารี่*
+                        ซึ่งคุณสามารถเลือกซื้อสินค้าได้ตามใจคุณ</p>
                 </div>
                 <div id="shop-by-parts"
                     class="grid grid-cols-1 gap-0 justify-items-center content-center 540px:grid-cols-3 540px:gap-2 768px:gap-1">
@@ -199,17 +201,15 @@
                 <img src="./assets/image/mercedes-benz/mercedes-benz-amg.jpg" alt="mercedes benz amg"
                     class="w-full h-full object-cover select-none rounded-xl z-0" loading="lazy" />
                 <div
-                    class="w-full h-full p-5 absolute inset-y-0 flex flex-col font-inter text-white justify-between items-center rounded-xl backdrop-blur left-0 bg-black bg-opacity-70 912px:w-[20rem] 912px:rounded-l-xl 912px:rounded-r-none 1024px:w-[26rem]">
-                    <div class="w-full flex flex-col space-y-1 justify-start items-start">
-                        <h1 class="font-semibold text-lg 768px:text-2xl">Workspace Collection</h1>
-                        <p class="font-light text-xs text-gray-300 912px:text-lg">Upgrade your desk with objects that
-                            keep you
-                            organized and
-                            clear-minded.</p>
+                    class="w-full h-full p-5 absolute inset-y-0 flex flex-col text-white justify-between items-center rounded-xl backdrop-blur left-0 bg-black bg-opacity-70 912px:w-[20rem] 912px:rounded-l-xl 912px:rounded-r-none 1024px:w-[26rem]">
+                    <div class="w-full flex flex-col font-seeds space-y-1 justify-start items-start">
+                        <h1 class="font-semibold text-lg 768px:text-2xl">บริการแต่งครบชุด</h1>
+                        <p class="font-normal text-xs text-stone-400 912px:text-lg">อัปเกรดรถยนต์ของคุณได้
+                            ไม่ว่าคุณจะเป็นลูกค้าเราหรือไม่ใช่ คุณก็สามารถใช้บริการกับทางเราได้</p>
                     </div>
-                    <a class="w-full py-2 border border-gray-400 text-[0.65rem] rounded-lg font-semibold text-center transition ease-in-out bg-white bg-opacity-0 hover:bg-opacity-10 768px:py-3 768px:text-xs 912px:py-4 912px:text-base"
+                    <a class="w-full py-2 border border-gray-400 text-[0.65rem] rounded-lg font-semibold text-center transition ease-in-out bg-white bg-opacity-0 hover:bg-opacity-10 768px:py-3 768px:text-xs 912px:py-4 912px:text-lg"
                         href="#">
-                        View the collection
+                        ดูของแต่งรถยนต์
                     </a>
                 </div>
             </div>
@@ -240,33 +240,26 @@
                     <div class="w-full grid grid-cols-1 gap-3 912px:grid-cols-2 912px:gap-20">
                         <div
                             class="w-full h-[14.5rem] py-6 px-6 rounded-xl bg-[#f3f4f6] overflow-hidden 768px:h-[15.5rem] 912px:w-[29.5rem] 912px:h-[22rem] 912px:py-14 912px:px-28 1024px:w-[39rem] 1024px:h-[18rem] 1024px:py-14 1024px:px-28">
-                            <div class="w-full h-full flex-col font-inter space-y-10 justify-center items-center">
+                            <div class="w-full h-full flex-col font-seeds space-y-10 justify-center items-center">
                                 <div
                                     class="flex flex-col space-y-1 justify-center items-center 912px:justify-center 912px:items-centejustify-center 1024px:justify-start 1024px:items-start">
                                     <h1
-                                        class="font-semibold text-center text-base text-black 768px:text-lg 912px:text-center 1024px:text-start">
-                                        Sign up for
-                                        our
-                                        newsletter</h1>
+                                        class="font-semibold text-center text-base text-black 768px:text-lg 912px:text-2xl 912px:text-center 1024px:text-start">
+                                        ลงทะเบียนรับข่าวสาร</h1>
                                     <p
-                                        class="font-light text-center text-[0.66rem] text-gray-600 360px:text-sm 912px:text-base 912px:text-center 1024px:text-start">
-                                        The
-                                        latest news,
-                                        articles, and
-                                        resources, sent
-                                        to
-                                        your inbox
-                                        weekly.</p>
+                                        class="font-normal text-center text-[0.66rem] text-gray-500 360px:text-sm 912px:text-base 912px:text-center 1024px:text-start">
+                                        คุณสามารถลงทะเบียนเพื่อรับข่าวสารและโปรโมชั่นพิเศษจากทางเราได้โดยใส่อีเมลล์เพื่อรับข้อมูลข่าวสาร
+                                    </p>
                                 </div>
                                 <form
                                     class="flex flex-col space-x-0 space-y-2 1024px:flex-row 1024px:space-x-4 1024px:space-y-0"
                                     method="post">
                                     <input type="email" name="email"
                                         class="w-full px-2 py-2 rounded-lg border text-[0.60rem] shadow-sm outline-none 360px:text-xs 412px:text-sm 768px:text-base"
-                                        placeholder="Your email address" autocomplete="off" required />
+                                        placeholder="กรอกอีเมลล์ของคุณ" autocomplete="off" required />
                                     <input type="submit" name="submit"
                                         class="px-2 py-2 cursor-pointer text-xs rounded-lg bg-black text-white transition ease-in-out hover:bg-opacity-75 768px:py-3 768px:text-base 912px:px-5 912px:py-2"
-                                        value="Contact" />
+                                        value="ลงทะเบียน" />
                                 </form>
                             </div>
                         </div>
@@ -275,20 +268,15 @@
                             <div
                                 class="py-14 px-8 w-full h-full absolute inset-0 flex flex-col space-y-1.5 text-white justify-center items-center z-20 912px:py-14 912px:px-28">
                                 <h1
-                                    class="font-inter font-bold text-xl 360px:text-2xl 768px:text-4xl 912px:text-xl 1024px:text-3xl">
-                                    Get early access
+                                    class="font-seeds font-bold text-xl 360px:text-2xl 768px:text-4xl 912px:text-xl 1024px:text-3xl">
+                                    โปรโมชั่นในปัจจุบัน
                                 </h1>
                                 <p
                                     class="w-auto text-center text-xs text-gray-300 360px:text-sm 768px:text-2xl 912px:w-[23rem] 912px:text-base 1024px:text-lg">
-                                    Did
-                                    you sign up to the
-                                    newsletter?
-                                    If
-                                    so, use the
-                                    keyword we sent you to get access. <a
+                                    คุณสามารถใช้โปรโมชั่นในปัจจุบันที่เรากำลังจัดอยู่เพื่ิอซื้อรถยนต์จากทางเราได้ <a
                                         class="inline-flex items-center font-semibold text-[0.70rem] text-white transition ease-in-out hover:text-opacity-75 360px:text-sm 768px:text-xl 912px:text-base"
-                                        href="#">Go now&nbsp;<svg
-                                            class="w-[14px] h-[14px] 360px:w-[15px] 360px:h-[15px] 768px:w-[20px] 768px:h-[20px] 912px:w-[22px] 912px:h-[22px] 1024px:w-[24px] 1024px:h-[24px] text-white"
+                                        href="#">ดูเลย&nbsp;<svg
+                                            class="w-[14px] h-[14px] 360px:w-[15px] 360px:h-[15px] 768px:w-[20px] 768px:h-[20px] text-white"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -305,10 +293,10 @@
                         <p class="text-xs 912px:text-base">&copy; 2022 All Rights Reserved</p>
                         <div class="flex flex-row divide-x space-x-6 justify-center items-center 912px:space-x-8">
                             <div
-                                class="hidden flex-row space-x-8 justify-center items-center 768px:space-x-6 768px:text-xs 768px:flex 912px:text-base">
-                                <a href="#" class="transition ease-in-out hover:text-gray-800">Accessibility</a>
-                                <a href="#" class="transition ease-in-out hover:text-gray-800">Privacy</a>
-                                <a href="#" class="transition ease-in-out hover:text-gray-800">Teams</a>
+                                class="hidden flex-row font-seeds font-normal space-x-8 justify-center items-center text-gray-500 768px:space-x-6 768px:text-xs 768px:flex 912px:text-base">
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">การช่วยการเข้าถึง</a>
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">นโยบายหลังการขาย</a>
+                                <a href="#" class="transition ease-in-out hover:text-gray-800">ทีมงาน</a>
                             </div>
                             <a href="#" class="mx-2">
                                 <img src="./assets/image/utility/thailand-flag.svg" alt="thailand" width="18"

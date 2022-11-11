@@ -48,8 +48,8 @@ export const Parts = [
     {
         imageUrl: CustomizeLamborghiniLimeImage,
         alt: 'front of customize lamborghini',
-        header: 'Handcrafted Collectionsas',
-        description: 'Keep your phone, keys, and wallet together, so you can lose everything at once.',
+        header: 'Customize your Lamborghini',
+        description: 'ปรับแต่งด้านหน้ารถยนต์ลัมโบร์กีนีของคุณได้ตามใจชอบของคุณและของแต่งรถยนต์อีกมากมายที่คุณต้องการ',
         label: 'Front',
         href: '#'
 
@@ -57,16 +57,16 @@ export const Parts = [
     {
         imageUrl: CustomizeLamborghiniBackImage,
         alt: 'back of customize lamborghini',
-        header: 'Handcrafted Collection',
-        description: 'Keep your phone, keys, and wallet together, so you can lose everything at once.',
+        header: 'Customize your Lamborghini',
+        description: 'ปรับแต่งด้านหลังรถยนต์ลัมโบร์กีนีของคุณได้ตามใจชอบของคุณและท่อแต่งของรถยนต์ได้อย่างเต็มที่',
         label: 'Back',
         href: '#'
     },
     {
         imageUrl: CustomizeLamborghiniInteriorImage,
         alt: 'interior of customize lamborghini',
-        header: 'Handcrafted Collection',
-        description: 'Keep your phone, keys, and wallet together, so you can lose everything at once.',
+        header: 'Customize your Lamborghini',
+        description: 'ปรับแต่งภายในรถยนต์ลัมโบร์กีนีของคุณด้วยความต้องการของคุณเองด้วยช่างรถยนต์มากความสามารถ',
         label: 'Interior',
         href: '#'
     }
@@ -78,25 +78,21 @@ export const Products = [
         header: true,
     },
     {
-        label: "Bags",
+        label: "แบรนด์รถยนต์",
         href: "#"
     },
     {
-        label: "Tees",
+        label: "ของแต่งรถยนต์",
         href: "#"
     },
     {
-        label: "Objects",
+        label: "สติ๊กเกอร์พิเศษ",
         href: "#"
     },
     {
-        label: "Home Goods",
+        label: "อุปกรณ์เสริม",
         href: "#"
     },
-    {
-        label: "Accessories",
-        href: "#"
-    }
 ];
 
 export const CustomerService = [
@@ -105,31 +101,27 @@ export const CustomerService = [
         header: true,
     },
     {
-        label: "Contact",
+        label: "การติดต่อกับทางเรา",
         href: "#"
     },
     {
-        label: "Shipping",
+        label: "การขนส่งรถยนต์",
         href: "#"
     },
     {
-        label: "Returns",
+        label: "โปรโมชั่นรถยนต์",
         href: "#"
     },
     {
-        label: "Warranty",
+        label: "ประกันรถยนต์",
         href: "#"
     },
     {
-        label: "Secure Payments",
+        label: "ความปลอดภัย",
         href: "#"
     },
     {
-        label: "FAQ",
-        href: "#"
-    },
-    {
-        label: "Find a store",
+        label: "คำถามที่มักพบบ่อย",
         href: "#"
     },
 ];
@@ -140,27 +132,23 @@ export const Company = [
         header: true,
     },
     {
-        label: "Who we are",
+        label: "พวกเราคือใคร?",
         href: "#"
     },
     {
-        label: "Sustainability",
+        label: "ความยั่งยืนทางบริษัท",
         href: "#"
     },
     {
-        label: "Press",
+        label: "รับสมัครงาน",
         href: "#"
     },
     {
-        label: "Careers",
+        label: "ข้อตกลงและเงื่อนไข",
         href: "#"
     },
     {
-        label: "Terms & Condition",
-        href: "#"
-    },
-    {
-        label: "Privacy",
+        label: "ความเป็นส่วนตัว",
         href: "#"
     },
 ];
@@ -171,15 +159,15 @@ export const Legal = [
         header: true,
     },
     {
-        label: "Return Policy",
+        label: "นโยบายการคืนเงิน",
         href: "#"
     },
     {
-        label: "Privacy Policy",
+        label: "นโยบายข้อมูลลูกค้า",
         href: "#"
     },
     {
-        label: "Shipping Policy",
+        label: "นโยบายการขนส่ง",
         href: "#"
     },
 ];

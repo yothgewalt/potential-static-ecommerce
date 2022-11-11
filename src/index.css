@@ -4,106 +4,123 @@
 
 /* Font: "Seed Sans" */
 @font-face {
-    font-family: "Seed Sans";
+    font-family: 'Seed Sans';
     font-weight: 100;
     font-style: normal;
-    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Th.woff2) format("woff2");
+    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Th.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Seed Sans";
+    font-family: 'Seed Sans';
     font-weight: 400;
     font-style: normal;
-    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Rg.woff2) format("woff2");
+    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Rg.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Seed Sans";
+    font-family: 'Seed Sans';
     font-weight: 700;
     font-style: normal;
-    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Bd.woff2) format("woff2");
+    src: url(./assets/font/seed-sans/LINESeedSansTH_W_Bd.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Seed Sans";
+    font-family: 'Seed Sans';
     font-weight: 800;
     font-style: normal;
-    src: url(./assets/font/seed-sans/LINESeedSansTH_W_XBd.woff2) format("woff2");
+    src: url(./assets/font/seed-sans/LINESeedSansTH_W_XBd.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Seed Sans";
+    font-family: 'Seed Sans';
     font-weight: 900;
     font-style: normal;
-    src: url(./assets/font/seed-sans/LINESeedSansTH_W_He.woff2) format("woff2");
+    src: url(./assets/font/seed-sans/LINESeedSansTH_W_He.woff2) format('woff2');
 }
 
 /* Font: "Inter" */
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 100;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Thin.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Thin.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 200;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-ExtraLight.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-ExtraLight.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 300;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Light.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Light.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 400;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Regular.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Regular.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 500;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Medium.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Medium.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 600;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-SemiBold.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-SemiBold.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 700;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Bold.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Bold.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 800;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-ExtraBold.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-ExtraBold.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-weight: 900;
     font-style: normal;
-    src: url(./assets/font/inter/Inter-Black.woff2) format("woff2");
+    src: url(./assets/font/inter/Inter-Black.woff2) format('woff2');
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
 }
 
 :root {
-    background: #000000;
+    font-family: 'Seed Sans', Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    background-color: #111111;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 .glassmorphism {

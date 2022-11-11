@@ -50,7 +50,7 @@ export function onPartRender() {
                     <h1 class="font-semibold">${object.header}</h1>
                     <span class="px-1.5 h-4 inline-flex items-center text-[0.60rem] text-center rounded-md text-green-800 bg-green-400 bg-opacity-60 540px:h-3 540px:text-[0.45rem] 540px:rounded 768px:px-1.5 768px:h-5 768px:text-sm">${object.label}</span>
                 </span>
-                <p class="font-inter font-light text-xs text-gray-700 540px:text-[0.64rem] 540px:leading-3 768px:text-[0.66rem] 912px:text-base">
+                <p class="font-seeds font-normal text-xs text-gray-500 540px:text-[0.64rem] 540px:leading-3 768px:text-[0.66rem] 912px:text-base">
                     ${object.description}
                 </p>
             </div>
@@ -72,7 +72,7 @@ export function onProductHyperlinkRender() {
             `;
         } else {
             products += `
-            <a href="${object.href}">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
             `;
         }
     });
@@ -91,7 +91,7 @@ export function onCustomerServiceHyperlinkRender() {
             `
         } else {
             customerService += `
-            <a href="${object.href}">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
             `;
         }
     });
@@ -110,7 +110,7 @@ export function onCompanyHyperlinkRender() {
             `;
         } else {
             company += `
-            <a href="${object.href}">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
             `;
         }
     });
@@ -125,11 +125,11 @@ export function onLegalHyperlinkRender() {
     Legal.map((object) => {
         if (object.header?.valueOf()) {
             legal += `
-            <h1 class="font-semibold text-black">${object.label}</h1>
+            <h1 class="inline-flex items-center font-semibold text-black">${object.label}</h1>
             `;
         } else {
             legal += `
-            <a href="${object.href}">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
             `;
         }
     });
