@@ -1,10 +1,10 @@
 /* Brand Image */
-import PorscheCaymanImage from './../../assets/image/porsche/porsche-cayman.jpg';
-import FerrariSF90Image from './../../assets/image/ferrari/ferrari-sf90.jpg';
-import McLaren765LTImage from './../../assets/image/mclaren/mclaren-765lt-spider-5.jpg';
-import LamborghiniAventadorImage from './../../assets/image/lamborghini/lamborghini-aventador.jpg';
-import MercedesBenzChairmanImage from './../../assets/image/mercedes-benz/mercedes-benz-chairman.jpg';
-import AudoR8V10Image from './../../assets/image/audi/audi-r8-v10.jpg';
+import PorscheCaymanImage from './../../assets/image/porsche/porsche-cayman.webp';
+import FerrariSF90Image from './../../assets/image/ferrari/ferrari-sf90.webp';
+import McLaren765LTImage from './../../assets/image/mclaren/mclaren-765lt-spider-5.webp';
+import LamborghiniAventadorImage from './../../assets/image/lamborghini/lamborghini-aventador.webp';
+import MercedesBenzChairmanImage from './../../assets/image/mercedes-benz/mercedes-benz-chairman.webp';
+import AudoR8V10Image from './../../assets/image/audi/audi-r8-v10.webp';
 
 /* Part Image */
 import CustomizeLamborghiniLimeImage from './../../assets/image/lamborghini/lamborghini-lime.webp';
