@@ -7,6 +7,8 @@
         "build": "parcel build"
     },
     "devDependencies": {
+        "@parcel/packager-raw-url": "2.7.0",
+        "@parcel/transformer-webmanifest": "2.7.0",
         "parcel": "latest",
         "postcss": "^8.4.18",
         "prettier": "^2.7.1",
