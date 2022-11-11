@@ -42,7 +42,7 @@ export function onPartRender() {
 
     Parts.map((object) => {
         part += `
-        <a class="p-4 flex flex-col rounded-xl space-y-4 justify-start items-start transition ease-in-out hover:bg-none 540px:space-y-3 768px:space-y-6 912px:hover:bg-stone-200" href="${object.href}">
+        <a class="p-4 flex flex-col rounded-xl space-y-4 justify-start items-start transition ease-in-out hover:bg-none focus:outline-none 540px:space-y-3 768px:space-y-6 912px:hover:bg-stone-200" href="${object.href}">
             <div class="${gridBlockClasses}">
                 <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full object-cover select-none rounded-xl z-10" loading="lazy" />
                 <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse -z-10"></div>
@@ -74,7 +74,7 @@ export function onProductHyperlinkRender() {
             `;
         } else {
             products += `
-            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>
             `;
         }
     });
@@ -93,7 +93,7 @@ export function onCustomerServiceHyperlinkRender() {
             `
         } else {
             customerService += `
-            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>
             `;
         }
     });
@@ -112,7 +112,7 @@ export function onCompanyHyperlinkRender() {
             `;
         } else {
             company += `
-            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>
             `;
         }
     });
@@ -131,7 +131,7 @@ export function onLegalHyperlinkRender() {
             `;
         } else {
             legal += `
-            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800">${object.label}</a>
+            <a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>
             `;
         }
     });
