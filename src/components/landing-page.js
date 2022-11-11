@@ -16,10 +16,11 @@ export function onCategoryRender() {
         category += `
         <div class="${gridBlockClasses}">
             <a class="w-full h-full relative flex text-xs transition ease-in-out rounded-xl hover:opacity-90 360px:text-base 540px:text-lg 768px:text-xl 912px:text-2xl 912px:hover:text-[1.6rem]" href="#">
-                <div class="w-full h-full pb-3 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-10 768px:pb-5">
+                <div class="w-full h-full pb-3 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-20 768px:pb-5">
                     <h1 class="font-inter font-semibold text-white">${object.brandName}</h1>
                 </div>
-                <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full rounded-xl select-none object-cover z-0" loading="lazy" />
+                <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full rounded-xl select-none object-cover z-10" loading="lazy" />
+                <div class="w-full h-full absolute inset-0 rounded-xl animate-pulse bg-neutral-400 z-0"></div>
             </a>
         </div>
         `;
@@ -33,7 +34,7 @@ export function onPartRender() {
     let part = ``;
 
     let gridBlockClasses = classNames(
-        'w-[16rem] h-[16rem] rounded-xl bg-stone-100',
+        'w-[16rem] h-[16rem] relative rounded-xl bg-stone-100',
         '360px:w-[20rem] 360px:h-[20rem] 375px:w-[22rem] 375px:h-[22rem] 390px:w-[23rem] 390px:h-[23rem]',
         '540px:w-[10.5rem] 540px:h-[16rem] 412px:w-[24rem] 412px:h-[24rem] 768px:w-[15.2rem] 768px:h-[24rem]',
         '820px:w-[16.2rem] 820px:h-[25rem] 912px:w-[18rem] 912px:h-[28rem] 1024px:w-[24.5rem] 1024px:h-[31rem]'
@@ -43,7 +44,8 @@ export function onPartRender() {
         part += `
         <a class="p-4 flex flex-col rounded-xl space-y-4 justify-start items-start transition ease-in-out hover:bg-none 540px:space-y-3 768px:space-y-6 912px:hover:bg-stone-200" href="${object.href}">
             <div class="${gridBlockClasses}">
-                <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full object-cover select-none rounded-xl z-0" loading="lazy" />
+                <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full object-cover select-none rounded-xl z-10" loading="lazy" />
+                <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse -z-10"></div>
             </div>
             <div class="flex flex-col space-y-1 justify-start items-start">
                 <span class="flex flex-row space-x-1.5 font-inter text-sm justify-center items-center 540px:text-[0.60rem] 768px:text-sm 912px:text-lg">
