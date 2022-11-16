@@ -16,8 +16,9 @@ export function onCategoryRender() {
         category += `
         <div class="${gridBlockClasses}">
             <a class="w-full h-full relative flex text-xs transition ease-in-out rounded-xl hover:opacity-90 360px:text-base 540px:text-lg 768px:text-xl 912px:text-2xl 912px:hover:text-[1.6rem]" href="#">
-                <div class="w-full h-full pb-3 absolute inset-0 flex justify-center items-end rounded-xl bg-black bg-opacity-20 z-20 768px:pb-5">
+                <div class="w-full h-full pb-3 absolute inset-0 flex flex-col justify-end items-center rounded-xl bg-black bg-opacity-20 z-20 768px:pb-4">
                     <h1 class="font-inter font-semibold text-white">${object.brandName}</h1>
+                    <p class="font-seeds font-normal text-xs text-stone-300 1024px:text-[1.1rem]">เลือกดูรถยนต์ที่ต้่องการ</p>
                 </div>
                 <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full rounded-xl select-none object-cover z-10" loading="lazy" />
                 <div class="w-full h-full absolute inset-0 rounded-xl animate-pulse bg-neutral-400 z-0"></div>
@@ -137,4 +138,36 @@ export function onLegalHyperlinkRender() {
     });
 
     LegalElements.innerHTML = legal.trim();
+}
+
+export async function onRender() {
+    const withCategory = onCategoryRender();
+    const withPart = onPartRender();
+    const withProductHyperlink = onProductHyperlinkRender();
+    const withCustomerHyperlink = onCustomerServiceHyperlinkRender();
+    const withCompanyHyperlink = onCompanyHyperlinkRender();
+    const withLegalHyperlink = onLegalHyperlinkRender();
+
+    await Promise.all([
+        withCategory,
+        withPart,
+        withProductHyperlink,
+        withCustomerHyperlink,
+        withCompanyHyperlink,
+        withLegalHyperlink,
+    ]);
+}
+
+export async function onFooterHyperlinkRender() {
+    const withProductHyperlink = onProductHyperlinkRender();
+    const withCustomerHyperlink = onCustomerServiceHyperlinkRender();
+    const withCompanyHyperlink = onCompanyHyperlinkRender();
+    const withLegalHyperlink = onLegalHyperlinkRender();
+
+    await Promise.all([
+        withProductHyperlink,
+        withCustomerHyperlink,
+        withCompanyHyperlink,
+        withLegalHyperlink,
+    ]);
 }

@@ -1,15 +1,15 @@
 /* Brand Image */
-import PorscheCaymanImage from './../../assets/image/porsche/porsche-cayman.webp';
-import FerrariSF90Image from './../../assets/image/ferrari/ferrari-sf90.webp';
-import McLaren765LTImage from './../../assets/image/mclaren/mclaren-765lt-spider-5.webp';
-import LamborghiniAventadorImage from './../../assets/image/lamborghini/lamborghini-aventador.webp';
-import MercedesBenzChairmanImage from './../../assets/image/mercedes-benz/mercedes-benz-chairman.webp';
-import AudoR8V10Image from './../../assets/image/audi/audi-r8-v10.webp';
+const PorscheCaymanImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche-cayman.webp';
+const FerrariSF90Image = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/ferrari-sf90.webp';
+const McLaren765LTImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mclaren-765lt-spider-5.webp';
+const LamborghiniAventadorImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-aventador.webp';
+const MercedesBenzChairmanImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mercedes-benz-chairman.webp';
+const AudoR8V10Image = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/audi-r8-v10.webp';
 
 /* Part Image */
-import CustomizeLamborghiniLimeImage from './../../assets/image/lamborghini/lamborghini-lime.webp';
-import CustomizeLamborghiniBackImage from './../../assets/image/lamborghini/lamborghini-back.webp';
-import CustomizeLamborghiniInteriorImage from './../../assets/image/lamborghini/lamborghini-interior.webp';
+const CustomizeLamborghiniLimeImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-lime.webp';
+const CustomizeLamborghiniBackImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-back.webp';
+const CustomizeLamborghiniInteriorImage = 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-interior.webp';
 
 export const Brands = [
     {

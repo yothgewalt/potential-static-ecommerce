@@ -29,7 +29,6 @@
 </head>
 
 <body class="h-auto antialiased">
-
     <!-- Navigation Bar & Hero Section -->
     <header id="header-navigation-area"
         class="sticky top-0 left-0 w-full h-12 font-seeds glassmorphism z-50 1024px:h-16">
@@ -37,7 +36,7 @@
             <div class="relative w-full h-full flex flex-row justify-between items-center text-white">
                 <a class="inline-flex items-center font-inter font-bold select-none text-xs transition ease-in-out hover:opacity-80 focus:outline-none 360px:text-sm 768px:text-base 912px:text-lg"
                     href="#">
-                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px] animate-spin"
+                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px]"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                         <path fill-rule="evenodd"
                             d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
@@ -58,16 +57,9 @@
                     <a href="#" class="transition ease-in-out hover:text-stone-400">ศูนย์ช่วยเหลือ</a>
                 </div>
                 <div class="hidden flex-row font-seeds space-x-4 justify-center items-center 1024px:flex">
-                    <a href="./pages/registration.html" class="text-stone-300">คุณยังไม่มีบัญชี?</a>
-                    <a href="./pages/authentication.html"
-                        class="inline-flex items-center transition ease-in-out hover:text-stone-300">
-                        เข้าสู่ระบบ
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-                        </svg>
-                    </a>
+                    <div id="authentication-state" class="flex flex-row space-x-2 justify-center items-center">
+                        <!-- This element will implemented by JavaScript for Authentication Information -->
+                    </div>
                     <a href="#" class="inline-flex items-center">
                         <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] text-gray-300"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -76,7 +68,9 @@
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
                         &nbsp;
-                        0
+                        <span id="cart-counter" class="align-middle">
+                            <!-- Cart Counter that's for who authorized (Implemented by JavaScript) -->
+                        </span>
                     </a>
                 </div>
                 <button type="menu" id="navigation-menu"
@@ -94,7 +88,7 @@
             <!-- Navigation Menu with Responsived -->
             <div id="modular-dropdown-menu"
                 class="hidden dropdown-modular w-full h-[20rem] absolute inset-x-0 top-[2.97rem] backdrop-blur-lg shadow-lg glassmorphism">
-                assssasas
+                Dropdown
             </div>
             <!-- End -->
 
@@ -113,7 +107,7 @@
                         พร้อมด้วยแบรนด์รถยนต์มากมายที่ให้คุณเลือกได้ตามใจชอบและยังมีบริการของแต่งรถยนต์ที่คุณสามารถเลือกได้เอง
                     </p>
                 </div>
-                <a href="#"
+                <a href="./pages/category/new-arrivals-category.html"
                     class="px-4 py-2 rounded-lg font-medium text-xs text-black bg-white transition ease-in-out hover:bg-opacity-80 focus:outline-none 375px:text-sm 768px:text-base 912px:text-lg 912px:px-6 912px:py-3">ค้นหารถยนต์ของคุณ</a>
                 <div class="flex flex-col animate-bounce space-y-1 justify-center items-center">
                     <h1 class="font-normal text-xs text-stone-300 540px:text-sm 768px:text-base">เลื่อนลงข้างล่าง</h1>
@@ -126,8 +120,8 @@
             </div>
         </div>
         <div class="w-full h-full absolute inset-0 bg-black bg-opacity-60 z-10"></div>
-        <img src="./assets/image/porsche/porsche-taycan-4s.webp" alt="porsche taycan 4s"
-            class="w-full h-screen select-none object-cover z-0" loading="lazy" />
+        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche-taycan-4s.webp"
+            alt="porsche taycan 4s" class="w-full h-screen select-none object-cover z-0" loading="lazy" />
     </section>
     <!-- End -->
 
@@ -190,9 +184,12 @@
                         class="px-3 py-1 rounded-lg font-medium text-[0.50rem] text-black bg-white transition ease-in-out hover:bg-opacity-90 focus:outline-none 360px:px-4 360px:py-1.5 360px:text-[0.64rem] 768px:text-base 912px:px-6 912px:py-3 912px:text-lg">ค้นหารถยนต์ของคุณ</a>
                 </div>
                 <div class="w-full h-full absolute inset-0 rounded-xl bg-black bg-opacity-40 z-20"></div>
-                <video autoplay poster="./assets/image/lamborghini/lamborghini-huracan.webp" loop preload="auto" muted
-                    class="w-full object-cover rounded-xl z-10">
-                    <source src="./assets/video/lamborghini-aventador-svj-background.webm" type="video/webm" />
+                <video autoplay
+                    poster="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-huracan.webp"
+                    loop preload="auto" muted class="w-full object-cover rounded-xl z-10">
+                    <source
+                        src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-aventador-svj-background.webm"
+                        type="video/webm" />
                 </video>
                 <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>
             </div>
@@ -227,8 +224,9 @@
     <section class="w-full h-[19rem] bg-white 912px:h-[29rem] 1024px:h-[34rem]">
         <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <div class="w-full h-[16rem] relative flex rounded-xl bg-stone-100 912px:h-[24rem] 1024px:h-[28rem]">
-                <img src="./assets/image/mercedes-benz/mercedes-benz-amg.webp" alt="mercedes benz amg"
-                    class="w-full h-full object-cover select-none rounded-xl z-10" loading="lazy" />
+                <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mercedes-benz-amg.webp"
+                    alt="mercedes benz amg" class="w-full h-full object-cover select-none rounded-xl z-10"
+                    loading="lazy" />
                 <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>
                 <div
                     class="w-full h-full p-5 absolute inset-y-0 flex flex-col text-white justify-between items-center rounded-xl backdrop-blur left-0 bg-black bg-opacity-70 z-20 912px:w-[20rem] 912px:rounded-l-xl 912px:rounded-r-none 1024px:w-[26rem]">
@@ -243,6 +241,7 @@
                     </a>
                 </div>
             </div>
+        </div>
     </section>
     <!-- End -->
 
@@ -315,8 +314,9 @@
                                     </a></p>
                             </div>
                             <div class="w-full h-full absolute inset-0 bg-black rounded-xl bg-opacity-50 z-10"></div>
-                            <img src="./assets/image/porsche/porsche-interior.webp" alt="porsche interior"
-                                class="w-full h-full object-cover select-none rounded-xl z-0" loading="lazy" />
+                            <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche-interior.webp"
+                                alt="porsche interior" class="w-full h-full object-cover select-none rounded-xl z-0"
+                                loading="lazy" />
                         </div>
                     </div>
                     <div class="w-full flex flex-row font-inter font-light text-gray-600 justify-between items-center">
@@ -344,43 +344,41 @@
     <!-- End -->
 
     <script type="module">
-        import {
-            onCategoryRender,
-            onPartRender,
-            onProductHyperlinkRender,
-            onCustomerServiceHyperlinkRender,
-            onCompanyHyperlinkRender,
-            onLegalHyperlinkRender,
-        } from './components/landing-page.js';
+        import { onRender } from './components/landing-page.js';
+
+        import authenticationPage from './pages/authentication.html';
+        import registrationPage from './pages/registration.html';
+        import unauthorizedPage from './unauthorized.html';
+
+        var authenticationElement = document.getElementById('authentication-state');
+        var cartCounterElement = document.getElementById('cart-counter');
 
         window.addEventListener('load', (event) => {
-            onCategoryRender();
-            onPartRender();
-            onProductHyperlinkRender();
-            onCustomerServiceHyperlinkRender();
-            onCompanyHyperlinkRender();
-            onLegalHyperlinkRender();
-        });
+            onRender();
 
-        function onDropdown() {
-            document.getElementById('modular-dropdown-menu').classList.remove('hidden');
-            document.getElementById('modular-dropdown-menu').classList.toggle('block');
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('dropdown-modular-button')) {
-                var dropdowns = document.getElementsByClassName('dropdown-modular');
-                var index;
-
-                for (index = 0; index < dropdowns.length; index++) {
-                    var specificDropdownElement = dropdowns[index];
-
-                    if (specificDropdownElement.classList.contains('block')) {
-                        specificDropdownElement.classList.remove('block');
-                    }
-                }
+            if (localStorage.getItem('authorized')) {
+                authenticationElement.innerHTML = `
+                <p class="cursor-pointer">${localStorage.getItem('email_address')}</p>
+                <a class="text-gray-300 transition ease-in-out hover:text-red-400" href="${unauthorizedPage}">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px]">
+                        <path stroke-linecap=" round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    </svg>
+                </a>
+                `.trim();
+                cartCounterElement.innerHTML = `2`;
+            } else {
+                authenticationElement.innerHTML = `
+                <a href="${registrationPage}" class="text-stone-400">คุณยังไม่มีบัญชี?</a>
+                <a href="${authenticationPage}" class="inline-flex items-center transition ease-in-out hover:text-stone-300">
+                    เข้าสู่ระบบ
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+                    </svg>
+                </a>
+                `.trim();
+                cartCounterElement.innerHTML = `0`;
             }
-        }
+        });
     </script>
 </body>
 
