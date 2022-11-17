@@ -9,9 +9,9 @@ export const FirstPartOfNewArrivals = [
         engineType: 'V8 bi-turbo engine',
         fuelSystem: 'Gasoline',
         maximumHorsePower: '659 hp @ 6,000 rpm',
-        maximumTorque: ' Torque 850 lb-ft @ 2,250 – 4,500 rpm',
+        maximumTorque: 'Torque 850 lb-ft @ 2,250 – 4,500 rpm',
         TranmissionSpeeds: 'Automatic 8 speed',
-        priceCar:  23420000 ,
+        priceCar:  23420000,
         carAvailable: 2,
     },
     {
@@ -42,7 +42,7 @@ export const FirstPartOfNewArrivals = [
     },
     {
         imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/2017-Subaru-Levorg-new-arrivals.webp',
-        alt: 'Subaru Levorg STI Sport R ',
+        alt: 'Subaru Levorg STI Sport R',
         carName: 'Levorg STI Sport R',
         driveTrain: 'Symmetrical AWD',
         engineType: 'Boxer flat four 2.4L Twin-Scroll Turbo',
