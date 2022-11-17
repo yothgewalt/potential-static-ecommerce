@@ -1,5 +1,3 @@
-import LamborghiniUltimaeImage from './../../assets/mock/lamborghini_ultimae.webp';
-
 export const FirstPartOfNewArrivals = [
     {
         imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini-urus-new-arrivals.webp',
@@ -79,7 +77,7 @@ export const FirstPartOfNewArrivals = [
     {
         imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/2023-nissan-z-new-arrivals.webp',
         alt: 'Nissan Fairlady Z',
-        brand: 'Nissan'
+        brand: 'Nissan',
         carName: 'Fairlady Z',
         driveTrain: 'RWD',
         engineType: 'V6 DOHC 3.0L Twin-Turbocharger',

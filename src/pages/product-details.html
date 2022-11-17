@@ -102,13 +102,102 @@
                     <!-- Product image was implemented by JavaScript -->
                 </div>
                 <div class="w-full h-full rounded-xl bg-inherit max-w-[50%]">
-                    <div class="w-full flex flex-row justify-between items-center">
-                        <h1 id="product-name" class="text-2xl">
-                            <!-- Product name was implemented by JavaScript -->
-                        </h1>
-                        <span id="product-price" class="text-2xl">
+                    <div class="w-full flex flex-row font-inter justify-between items-start">
+                        <span class="flex flex-col justify-start items-start">
+                            <h1 id="product-name" class="text-2xl font-semibold">
+                                <!-- Product name was implemented by JavaScript -->
+                            </h1>
+                            <span id="engine-type" class="font-light text-xl text-gray-500">
+                                <!-- Enginet type was implemented by JavaScript -->
+                            </span>
+                        </span>
+                        <span id="product-price" class="font-seeds font-normal text-2xl text-gray-900">
                             <!-- Product price was implemented by JavaScript -->
                         </span>
+                    </div>
+                    <div class="w-full my-10 flex flex-col space-y-2 justify-start items-start">
+                        <h1 class="font-seeds font-bold text-2xl">รายละเอียดรถยนต์</h1>
+                        <p id="product-description" class="font-seeds font-normal text-lg text-neutral-500">
+                            <!-- Product description was implemented by JavaScript -->
+                        </p>
+                    </div>
+                    <hr class="my-10" />
+                    <div class="flex flex-col space-y-8 justify-start items-start">
+                        <h1 class="font-bold text-2xl">ข้อมูลจำเพาะของรถยนต์</h1>
+                        <div class="flex flex-col space-y-6 justify-start items-start">
+                            <div class="flex flex-row space-x-10 justify-start items-start">
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Drive Train</h1>
+                                    <span id="drive-train" class="font-bold text-xl"></span>
+                                </span>
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Fuel System</h1>
+                                    <span id="fuel-system" class="font-bold text-xl"></span>
+                                </span>
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Maximum Torque</h1>
+                                    <span id="maximum-torque" class="font-bold text-lg"></span>
+                                </span>
+                            </div>
+                            <div class="flex flex-row space-x-10 justify-start items-start">
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Maximum Horse Power</h1>
+                                    <span id="maximum-horse-power" class="font-bold text-xl"></span>
+                                </span>
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Engine Type</h1>
+                                    <span id="second-engine-type" class="font-bold text-xl"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-10" />
+                    <div class="flex flex-row space-x-6 justify-between items-center">
+                        <div class="w-full h-[10rem] rounded-xl max-w-[50%] border-2 border-gray-300 bg-gray-200">
+                            <div class="w-full h-full flex flex-col space-y-1.5 justify-center items-center">
+                                <span class="flex flex-col justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 text-gray-400">
+                                        <path
+                                            d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 116 0h3a.75.75 0 00.75-.75V15z" />
+                                        <path
+                                            d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
+                                        <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
+                                    </svg>
+                                    <h1 class="font-seeds font-semibold text-gray-700">การขนส่งทั่วประเทศ</h1>
+                                </span>
+                                <span class="font-seeds flex justify-center items-center text-gray-600">
+                                    พร้อมขนส่งให้คุณภายใน 3 วัน
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full h-[10rem] rounded-xl max-w-[50%] border-2 border-gray-300 bg-gray-200">
+                            <div class="w-full h-full flex flex-col space-y-1.5 justify-center items-center">
+                                <span class="flex flex-col justify-center items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 text-gray-400">
+                                        <path
+                                            d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 116 0h3a.75.75 0 00.75-.75V15z" />
+                                        <path
+                                            d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
+                                        <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
+                                    </svg>
+                                    <h1 class="font-seeds font-semibold text-gray-700">ลุ้นรับสิทธิพิเศษ</h1>
+                                </span>
+                                <span class="font-seeds flex justify-center items-center text-gray-600">
+                                    เช่น ส่วนลดการซื้อรถยนต์
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full h-[9.3rem] mt-[1.6rem] flex justify-center items-end">
+                        <a href="#"
+                            class="w-full h-full flex rounded-xl justify-center items-center transition ease-in-out text-white bg-black hover:opacity-90">
+                            <span class="flex flex-col justify-center items-center">
+                                <h1 class="font-bold text-2xl">เลือกซื้อรถยนต์</h1>
+                                <h2 class="text-gray-200">คุณจะได้รับใบจองและนำมาที่โชว์รูม</h2>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -241,6 +330,13 @@
         let productPreviewImageElement = document.getElementById('product-preview-image');
         let productNameElement = document.getElementById('product-name');
         let productPriceElement = document.getElementById('product-price');
+        let engineTypeElement = document.getElementById('engine-type');
+        let productDescriptionElement = document.getElementById('product-description');
+        let driveTrainElement = document.getElementById('drive-train');
+        let fuelSystemElement = document.getElementById('fuel-system');
+        let maximumTorqueElement = document.getElementById('maximum-torque');
+        let maximumHorsePowerElement = document.getElementById('maximum-horse-power');
+        let secondEngineTypeElement = document.getElementById('second-engine-type');
 
         const OtherInterestingProducts = [
             {
@@ -565,6 +661,31 @@
                 productNameElement.textContent = localStorage.getItem('brand') + ' ' + localStorage.getItem('car_name');
             } else {
                 productNameElement.textContent = 'ไม่พบชื่อของข้อมูลสินค้า';
+            }
+
+            if (localStorage.getItem('engine_type')) {
+                engineTypeElement.textContent = localStorage.getItem('engine_type');
+                secondEngineTypeElement.textContent = localStorage.getItem('engine_type');
+            }
+
+            if (localStorage.getItem('description')) {
+                productDescriptionElement.textContent = localStorage.getItem('description');
+            }
+
+            if (localStorage.getItem('drive_train')) {
+                driveTrainElement.textContent = localStorage.getItem('drive_train');
+            }
+
+            if (localStorage.getItem('fuel_system')) {
+                fuelSystemElement.textContent = localStorage.getItem('fuel_system');
+            }
+
+            if (localStorage.getItem('maximum_torque')) {
+                maximumTorqueElement.textContent = localStorage.getItem('maximum_torque');
+            }
+
+            if (localStorage.getItem('maximum_horse_power')) {
+                maximumHorsePowerElement.textContent = localStorage.getItem('maximum_horse_power');
             }
 
             if (localStorage.getItem('price_car')) {
