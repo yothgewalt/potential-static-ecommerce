@@ -11,7 +11,7 @@ export const FirstPartOfNewArrivals = [
         maximumHorsePower: '659 hp @ 6,000 rpm',
         maximumTorque: 'Torque 850 lb-ft @ 2,250 – 4,500 rpm',
         TranmissionSpeeds: 'Automatic 8 speed',
-        priceCar:  23420000,
+        priceCar: 23420000,
         carAvailable: 2,
     },
     {
@@ -36,7 +36,7 @@ export const FirstPartOfNewArrivals = [
         fuelSystem: 'Gasoline',
         maximumHorsePower: '354 hp @ 6600 rpm',
         maximumTorque: '257 lb-ft @ 4900 rpm',
-        TranmissionSpeeds:'Automatic 10 speed Direct Shift',
+        TranmissionSpeeds: 'Automatic 10 speed Direct Shift',
         priceCar: 11530000,
         carAvailable: 4,
     },
