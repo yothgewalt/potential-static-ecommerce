@@ -1,6 +1,8 @@
 import { setProductState } from './../../contexts/global';
 import splitClassNames from './../../helper/splitClassNames';
 
+import ProductDetailPage from './../../pages/product-details.html';
+
 export default function NewArrivalCardTemplate(imageUrl, alternative, carName, carAvailable, priceCar, href) {
     const buttonElement = document.createElement('a');
     const classNames = splitClassNames(
@@ -26,7 +28,7 @@ export default function NewArrivalCardTemplate(imageUrl, alternative, carName, c
         </span>
     </div>
     `;
-    buttonElement.setAttribute('href', '/pages/product-details.html');
+    buttonElement.setAttribute('href', ProductDetailPage);
     buttonElement.addEventListener("click", () => setProductState(imageUrl));
 
     return buttonElement;
