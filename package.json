@@ -2,7 +2,6 @@
     "name": "potential-static-ecommerce",
     "license": "MIT",
     "source": "./src/index.html",
-    "main": "unrelated.js",
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
         "start": "parcel",
@@ -24,14 +23,5 @@
         "node": ">= 16",
         "npm": ">= 8",
         "yarn": ">= 1.22"
-    },
-    "targets": {
-        "main": false,
-        "default": {
-            "context": "browser",
-            "sourceMap": {
-                "inline": true
-            }
-        }
     }
 }
