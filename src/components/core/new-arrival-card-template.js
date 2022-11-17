@@ -4,7 +4,7 @@ import splitClassNames from './../../helper/splitClassNames';
 import ProductDetailPage from './../../pages/product-details.html';
 
 export default function NewArrivalCardTemplate(imageUrl, alternative, carName, carAvailable, priceCar, href) {
-    const buttonElement = document.createElement('a');
+    const buttonElement = document.createElement('button');
     const classNames = splitClassNames(
         'w-full h-[640px] p-3 relative flex flex-col space-y-4 rounded-xl justify-start items-start',
         'transition ease-in-out overflow-hidden hover:bg-neutral-200'
@@ -28,7 +28,6 @@ export default function NewArrivalCardTemplate(imageUrl, alternative, carName, c
         </span>
     </div>
     `;
-    buttonElement.setAttribute('href', ProductDetailPage);
     buttonElement.addEventListener("click", () => setProductState(imageUrl));
 
     return buttonElement;
