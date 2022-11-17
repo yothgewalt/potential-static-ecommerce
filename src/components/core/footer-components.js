@@ -91,9 +91,5 @@ export default async function onAsyncFooterHyperlinkRender() {
 }
 
 export {
-    useUnauthorizedAction,
-    useRegistrationButton,
-    useAuthenticationButton,
-    onAsyncLandingPageRender,
     onAsyncFooterHyperlinkRender
 };
