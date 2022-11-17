@@ -7,8 +7,9 @@ const SecondPartOfNewArrivalElement = document.getElementById('second-part-of-ne
 function withFirstPartOfNewArrivalLoader() {
     FirstPartOfNewArrivals.map((object) => {
         FirstPartOfNewArrivalElement.appendChild(NewArrivalCardTemplate(
-            object.imageUrl, object.alt, object.carName,
-            object.carAvailable, object.priceCar
+            object.imageUrl, object.alt, '', object.carName, object.driveTrain,
+            object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
+            object.TranmissionSpeeds, '', object.priceCar, object.carAvailable,
         ));
     });
 }
@@ -16,8 +17,9 @@ function withFirstPartOfNewArrivalLoader() {
 function withSecondPartOfNewArrivalLoader() {
     SecondPartOfNewArrivals.map((object) => {
         SecondPartOfNewArrivalElement.appendChild(NewArrivalCardTemplate(
-            object.imageUrl, object.alt, object.carName,
-            object.carAvailable, object.priceCar
+            object.imageUrl, object.alt, '', object.carName, object.driveTrain,
+            object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
+            object.TranmissionSpeeds, '', object.priceCar, object.carAvailable,
         ));
     });
 }

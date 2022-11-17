@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="bg-gray-50 overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8" />
@@ -26,10 +26,9 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image" content="./../assets/opengraph.jpg" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
-<body class="h-screen antialiased">
+<body class="h-screen text-black antialiased">
     <header id="header-navigation-area"
         class="sticky top-0 left-0 w-full h-12 font-seeds border-b shadow-sm bg-white z-50 1024px:h-16">
         <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
@@ -95,9 +94,49 @@
         </div>
     </header>
 
-    <section>
-        <h1 id="email-address"></h1>
+    <!-- Product Detail Section -->
+    <section class="w-full h-[113rem] py-8 bg-inherit">
+        <div class="container h-full mx-auto px-3 max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full h-[64rem] mb-12 flex flex-row space-x-8 justify-between items-center">
+                <div id="product-preview-image" class="w-full h-full rounded-xl relative flex max-w-[50%]">
+                    <!-- Product image was implemented by JavaScript -->
+                </div>
+                <div class="w-full h-full rounded-xl bg-inherit max-w-[50%]">
+                    <div class="w-full flex flex-row justify-between items-center">
+                        <h1 id="product-name" class="text-2xl">
+                            <!-- Product name was implemented by JavaScript -->
+                        </h1>
+                        <span id="product-price" class="text-2xl">
+                            <!-- Product price was implemented by JavaScript -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-8" />
+            <div class="w-full h-auto bg-inherit">
+                <div class="w-full flex flex-col space-y-4 justify-center items-center">
+                    <div class="w-full flex flex-row justify-between items-center">
+                        <h1 class="font-semibold text-2xl">รถยนต์คันอื่นที่คุณอาจจะชอบ</h1>
+                        <a href="#"
+                            class="inline-flex items-center text-lg transition ease-in-out text-blue-500 hover:opacity-75">
+                            <span>ดูทั้งหมด</span>&nbsp;
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]">
+                                <path fill-rule="evenodd"
+                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div id="other-interesting-products"
+                        class="grid grid-cols-4 gap-3 justify-items-center content-center place-content-center">
+                        <!-- SS -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- End -->
 
     <!-- Footer Bar -->
     <footer class="w-full h-auto pb-6 border-t bg-white">
@@ -195,25 +234,282 @@
         </div>
     </footer>
     <!-- End -->
-    <script type="module">
-        import onAsyncFooterHyperlinkRender from './../components/core/footer-components.js';
+    <script type="text/javascript">
+        let authenticationElement = document.getElementById('authentication-state');
+        let cartCounterElement = document.getElementById('cart-counter');
 
-        import splitClassNames from './../helper/splitClassNames.js';
+        let productPreviewImageElement = document.getElementById('product-preview-image');
+        let productNameElement = document.getElementById('product-name');
+        let productPriceElement = document.getElementById('product-price');
 
-        import RegistrationPage from './registration.html';
-        import AuthenticationPage from './authentication.html';
+        const OtherInterestingProducts = [
+            {
+                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Volkswagen-Scrirocco-interesting.webp',
+                alt: 'Volkswagen Scirocco',
+                carName: 'Volkswagen Scirocco',
+                engineType: 'Inline-four Engine 2.0L Turbo',
+                carPrice: 2395000
+            },
+            {
+                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Mercedes-Benz-X-Class-interesting.webp',
+                alt: 'Mercedes-Benz X-Class',
+                carName: 'Mercedes-Benz X-Class',
+                engineType: 'Inline-four Engine 2.3L Twin Turbo',
+                carPrice: 3990000
+            },
+            {
+                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/2018-Lexus-LC-500-interesting.webp',
+                alt: 'Lexus LC500',
+                carName: 'Lexus LC500',
+                engineType: 'V8 5.0L',
+                carPrice: 16950000
+            },
+            {
+                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Toyota-Gr-Suprainteresting.webp',
+                alt: 'Toyota GR Supra RZ',
+                carName: 'Toyota GR Supra RZ',
+                engineType: 'V6 3.0L Twin Scroll Turbo',
+                carPrice: 4999000
+            }
+        ];
+
+        const Products = [
+            {
+                label: "Products",
+                header: true,
+            },
+            {
+                label: "แบรนด์รถยนต์",
+                href: "#"
+            },
+            {
+                label: "ของแต่งรถยนต์",
+                href: "#"
+            },
+            {
+                label: "สติ๊กเกอร์พิเศษ",
+                href: "#"
+            },
+            {
+                label: "อุปกรณ์เสริม",
+                href: "#"
+            },
+        ];
+
+        const CustomerService = [
+            {
+                label: "Customer Service",
+                header: true,
+            },
+            {
+                label: "การติดต่อกับทางเรา",
+                href: "#"
+            },
+            {
+                label: "การขนส่งรถยนต์",
+                href: "#"
+            },
+            {
+                label: "โปรโมชั่นรถยนต์",
+                href: "#"
+            },
+            {
+                label: "ประกันรถยนต์",
+                href: "#"
+            },
+            {
+                label: "ความปลอดภัย",
+                href: "#"
+            },
+            {
+                label: "คำถามที่มักพบบ่อย",
+                href: "#"
+            },
+        ];
+
+        const Company = [
+            {
+                label: "Company",
+                header: true,
+            },
+            {
+                label: "พวกเราคือใคร?",
+                href: "#"
+            },
+            {
+                label: "ความยั่งยืนทางบริษัท",
+                href: "#"
+            },
+            {
+                label: "รับสมัครงาน",
+                href: "#"
+            },
+            {
+                label: "ข้อตกลงและเงื่อนไข",
+                href: "#"
+            },
+            {
+                label: "ความเป็นส่วนตัว",
+                href: "#"
+            },
+        ];
+
+        const Legal = [
+            {
+                label: "Legal",
+                header: true,
+            },
+            {
+                label: "นโยบายการคืนเงิน",
+                href: "#"
+            },
+            {
+                label: "นโยบายข้อมูลลูกค้า",
+                href: "#"
+            },
+            {
+                label: "นโยบายการขนส่ง",
+                href: "#"
+            },
+        ];
+
+        function splitClassNames(...classes) {
+            let aggregateClasses = classes.filter(Boolean).join(' ');
+
+            return aggregateClasses.split(" ");
+        }
+
+        function onOtherInterestingProductsLoader() {
+            const OtherInterestingProductElement = document.getElementById('other-interesting-products');
+            let products = ``;
+
+            OtherInterestingProducts.map((object) => {
+                products += `
+                <div class="w-[19.45rem] h-[36rem] flex flex-col space-y-3 justify-start items-start rounded-xl">
+                    <div class="w-full h-[26rem] relative flex rounded-xl">
+                        <div class="w-full h-full absolute inset-0 rounded-xl bg-gradient-to-t from-neutral-900 via-transparent to-transparent z-20"></div>
+                        <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full object-cover select-none rounded-xl z-10" loading="lazy" />
+                        <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>
+                    </div>
+                    <div class="w-full h-auto flex flex-col space-y-7 justify-start items-start">
+                        <div class="w-full flex flex-row justify-between">
+                            <span class="flex flex-col justify-start items-start">
+                                <h1 class="font-inter text-base font-medium">${object.carName}</h1>
+                                <p class="font-light text-xs text-gray-600">${object.engineType}</p>
+                            </span>
+                            <span>
+                                ${object.carPrice.toLocaleString()} บาท
+                            </span>
+                        </div>
+                        <a href="#" class="w-full py-2 flex shadow-sm font-medium rounded-md justify-center items-center transition ease-in-out bg-[#f3f5f6] hover:bg-[#e5e6e7]">ดูรายละเอียด</a>
+                    </div>
+                </div>
+                `;
+            });
+
+            OtherInterestingProductElement.innerHTML = products.trim();
+        }
+
+        function onProductHyperlinkRender() {
+            const ProductElements = document.getElementById('products');
+            let products = ``;
+
+            Products.map((object) => {
+                if (object.header?.valueOf()) {
+                    products += `<h1 class="font-semibold text-black">${object.label}</h1>`;
+                } else {
+                    products += `<a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>`;
+                }
+            });
+
+            ProductElements.innerHTML = products.trim();
+        }
+
+        function onCustomerServiceHyperlinkRender() {
+            const CustomerServiceElements = document.getElementById('customer-service');
+            let customerService = ``;
+
+            CustomerService.map((object) => {
+                if (object.header?.valueOf()) {
+                    customerService += `<h1 class="font-semibold text-black">${object.label}</h1>`
+                } else {
+                    customerService += `<a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>`;
+                }
+            });
+
+            CustomerServiceElements.innerHTML = customerService.trim();
+        }
+
+        function onCompanyHyperlinkRender() {
+            const CompanyElements = document.getElementById('company');
+            let company = ``;
+
+            Company.map((object) => {
+                if (object.header?.valueOf()) {
+                    company += `<h1 class="font-semibold text-black">${object.label}</h1>`;
+                } else {
+                    company += `<a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>`;
+                }
+            });
+
+            CompanyElements.innerHTML = company.trim();
+        }
+
+        function onLegalHyperlinkRender() {
+            const LegalElements = document.getElementById('legal');
+            let legal = ``;
+
+            Legal.map((object) => {
+                if (object.header?.valueOf()) {
+                    legal += `<h1 class="inline-flex items-center font-semibold text-black">${object.label}</h1>`;
+                } else {
+                    legal += `<a href="${object.href}" class="transition ease-in-out hover:text-gray-800 focus:outline-none">${object.label}</a>`;
+                }
+            });
+
+            LegalElements.innerHTML = legal.trim();
+        }
+
+        async function onAsyncFooterHyperlinkRender() {
+            const withProductHyperlink = onProductHyperlinkRender();
+            const withCustomerHyperlink = onCustomerServiceHyperlinkRender();
+            const withCompanyHyperlink = onCompanyHyperlinkRender();
+            const withLegalHyperlink = onLegalHyperlinkRender();
+
+            await Promise.all([
+                withProductHyperlink,
+                withCustomerHyperlink,
+                withCompanyHyperlink,
+                withLegalHyperlink,
+            ]);
+        }
+
+        function useImage(imageUrl, alternative) {
+            const imageElement = document.createElement('img')
+            const classNames = splitClassNames(
+                'w-full h-full object-cover select-none rounded-xl z-10',
+            );
+            classNames.map((className) => {
+                imageElement.classList.add(className);
+            });
+            imageElement.src = imageUrl;
+            imageElement.alt = alternative;
+            imageElement.loading = 'lazy';
+
+            return imageElement;
+        }
 
         function dropAuthorizedTokenAction() {
             localStorage.removeItem('email_address');
             localStorage.removeItem('authorized');
 
-            window.location.href = './index.html';
+            window.location.href = '/index.html';
         }
 
         function useUnauthorizedAction() {
             const buttonElement = document.createElement('button');
             const classNames = splitClassNames(
-                'text-stone-600 transition ease-in-out hover:text-red-400',
+                'text-gray-600 transition ease-in-out hover:text-red-400',
             );
             classNames.map((className) => {
                 buttonElement.classList.add(className);
@@ -235,7 +531,7 @@
             buttonElement.classList.add('text-stone-400');
             buttonElement.type = 'button';
             buttonElement.textContent = 'คุณยังไม่มีบัญชี?'
-            buttonElement.addEventListener("click", () => window.location.href = RegistrationPage);
+            buttonElement.addEventListener("click", () => window.location.href = './registration.html');
 
             return buttonElement;
         }
@@ -256,16 +552,34 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
             </svg>
             `;
-            buttonElement.addEventListener("click", () => window.location.href = AuthenticationPage);
+            buttonElement.addEventListener("click", () => window.location.href = './authentication.html');
 
             return buttonElement;
         }
 
-        var authenticationElement = document.getElementById('authentication-state');
-        var cartCounterElement = document.getElementById('cart-counter');
-
         window.addEventListener('load', (event) => {
+            onOtherInterestingProductsLoader();
             onAsyncFooterHyperlinkRender();
+
+            if (localStorage.getItem('car_name')) {
+                productNameElement.textContent = localStorage.getItem('brand') + ' ' + localStorage.getItem('car_name');
+            } else {
+                productNameElement.textContent = 'ไม่พบชื่อของข้อมูลสินค้า';
+            }
+
+            if (localStorage.getItem('price_car')) {
+                productPriceElement.textContent = localStorage.getItem('price_car') + ' บาท';
+            } else {
+                productPriceElement.textContent = 'ไม่พบราคาของข้อมูลสินค้า'
+            }
+
+            if (localStorage.getItem('image_url')) {
+                productPreviewImageElement.innerHTML = `<div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>`;
+                productPreviewImageElement.appendChild(useImage(
+                    localStorage.getItem('image_url'),
+                    localStorage.getItem('alt')
+                ));
+            }
 
             if (localStorage.getItem('authorized')) {
                 authenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();

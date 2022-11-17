@@ -1,9 +1,11 @@
 import { setProductState } from './../../contexts/global';
 import splitClassNames from './../../helper/splitClassNames';
 
-import ProductDetailPage from './../../pages/product-details.html';
-
-export default function NewArrivalCardTemplate(imageUrl, alternative, carName, carAvailable, priceCar, href) {
+export default function NewArrivalCardTemplate(
+    imageUrl, alternative, brand, carName, driveTrain,
+    engineType, fuelSystem, maximumHorsePower, maximumTorque,
+    transmissionSpeeds, description, priceCar, carAvailable,
+) {
     const buttonElement = document.createElement('button');
     const classNames = splitClassNames(
         'w-full h-[640px] p-3 relative flex flex-col space-y-4 rounded-xl justify-start items-start',
@@ -28,7 +30,14 @@ export default function NewArrivalCardTemplate(imageUrl, alternative, carName, c
         </span>
     </div>
     `;
-    buttonElement.addEventListener("click", () => setProductState(imageUrl));
+
+    const priceToLocaleString = priceCar.toLocaleString();
+
+    buttonElement.addEventListener("click", () => setProductState(
+        imageUrl, alternative, brand, carName, driveTrain,
+        engineType, fuelSystem, maximumHorsePower, maximumTorque,
+        transmissionSpeeds, description, priceToLocaleString, carAvailable
+    ));
 
     return buttonElement;
 }
