@@ -89,7 +89,3 @@ export default async function onAsyncFooterHyperlinkRender() {
         withLegalHyperlink,
     ]);
 }
-
-export {
-    onAsyncFooterHyperlinkRender
-};

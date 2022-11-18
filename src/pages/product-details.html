@@ -121,14 +121,14 @@
                             <!-- Product price was implemented by JavaScript -->
                         </span>
                     </div>
-                    <div class="w-full h-[10rem] my-10 flex flex-col space-y-2 justify-start items-start">
+                    <div class="w-full h-[10rem] mt-10 mb-0 flex flex-col space-y-2 justify-start items-start">
                         <h1 class="font-seeds font-bold text-2xl">รายละเอียดรถยนต์</h1>
                         <p id="product-description"
                             class="font-seeds font-normal text-lg overflow-y-auto text-neutral-500">
                             <!-- Product description was implemented by JavaScript -->
                         </p>
                     </div>
-                    <hr class="my-10" />
+                    <hr class="my-5" />
                     <div class="flex flex-col space-y-8 justify-start items-start">
                         <h1 class="font-bold text-2xl">ข้อมูลจำเพาะของรถยนต์</h1>
                         <div class="flex flex-col space-y-6 justify-start items-start">
@@ -212,7 +212,7 @@
                             class="w-full h-full flex rounded-xl justify-center items-center transition ease-in-out text-white bg-black hover:opacity-90">
                             <span class="flex flex-col justify-center items-center">
                                 <h1 class="font-bold text-2xl">เลือกซื้อรถยนต์</h1>
-                                <h2 class="text-gray-200">คุณจะได้รับใบจองและนำมาที่โชว์รูม</h2>
+                                <h2 class="text-gray-200">คุณจะได้รับใบจองเพื่อแสดงความเป็นเจ้าของ</h2>
                             </span>
                         </a>
                     </div>
@@ -706,44 +706,71 @@
             if (localStorage.getItem('from_page')) {
                 if (localStorage.getItem('from_page') === 'new-arrivals') {
                     previousPageElement.appendChild(usePreviousPageButton('./pages/new-arrivals-category.html'));
+                } else if (localStorage.getItem('from_page') === 'porsche') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/porsche-category.html'));
+                } else if (localStorage.getItem('from_page') === 'ferrari') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/ferrari-category.html'));
+                } else if (localStorage.getItem('from_page') === 'mclaren') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/mclaren-category.html'));
+                } else if (localStorage.getItem('from_page') === 'lamborghini') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/lamborghini-category.html'));
+                } else if (localStorage.getItem('from_page') === 'mercedes-benz') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/mercedes-benz-category.html'));
+                } else if (localStorage.getItem('from_page') === 'audi') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/audi-category.html'));
+                } else {
+                    previousPageElement.appendChild(usePreviousPageButton('./index.html'));
                 }
             }
 
             if (localStorage.getItem('car_name')) {
                 productNameElement.textContent = localStorage.getItem('brand') + ' ' + localStorage.getItem('car_name');
-            } else {
-                productNameElement.textContent = 'ไม่พบชื่อของข้อมูลสินค้า';
+            } else if (localStorage.getItem('car_name') === '') {
+                productNameElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('engine_type')) {
                 engineTypeElement.textContent = localStorage.getItem('engine_type');
                 secondEngineTypeElement.textContent = localStorage.getItem('engine_type');
+            } else if (localStorage.getItem('engine_type') === '') {
+                engineTypeElement.textContent = 'ไม่พบข้อมูล';
+                secondEngineTypeElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('description')) {
                 productDescriptionElement.textContent = localStorage.getItem('description');
+            } else if (localStorage.getItem('description') === '') {
+                productDescriptionElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('drive_train')) {
                 driveTrainElement.textContent = localStorage.getItem('drive_train');
+            } else if (localStorage.getItem('drive_train') === '') {
+                driveTrainElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('fuel_system')) {
                 fuelSystemElement.textContent = localStorage.getItem('fuel_system');
+            } else if (localStorage.getItem('fuel_system') === '') {
+                fuelSystemElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('maximum_torque')) {
                 maximumTorqueElement.textContent = localStorage.getItem('maximum_torque');
+            } else if (localStorage.getItem('maximum_torque') === '') {
+                maximumTorqueElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('maximum_horse_power')) {
                 maximumHorsePowerElement.textContent = localStorage.getItem('maximum_horse_power');
+            } else if (localStorage.getItem('maximum_horse_power') === '') {
+                maximumHorsePowerElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('price_car')) {
                 productPriceElement.textContent = localStorage.getItem('price_car') + ' บาท';
-            } else {
-                productPriceElement.textContent = 'ไม่พบราคาของข้อมูลสินค้า'
+            } else if (localStorage.getItem('price_car').length === 0) {
+                productPriceElement.textContent = 'ไม่พบข้อมูล';
             }
 
             if (localStorage.getItem('image_url')) {

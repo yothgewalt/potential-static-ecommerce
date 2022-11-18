@@ -1,7 +1,7 @@
-import { setProductState } from './../../contexts/global';
-import splitClassNames from './../../helper/splitClassNames';
+import { setProductState } from '../../contexts/global';
+import splitClassNames from '../../helper/splitClassNames';
 
-export default function NewArrivalCardTemplate(
+export default function ProductCardTemplate(
     imageUrl, alternative, brand, carName, driveTrain,
     engineType, fuelSystem, maximumHorsePower, maximumTorque,
     transmissionSpeeds, description, priceCar, carAvailable,

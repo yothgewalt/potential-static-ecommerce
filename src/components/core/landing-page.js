@@ -15,7 +15,10 @@ function onCategoryRender() {
     Brands.map((object) => {
         category += `
         <div class="${gridBlockClasses}">
-            <a class="w-full h-full relative flex text-xs transition ease-in-out rounded-xl hover:opacity-90 360px:text-base 540px:text-lg 768px:text-xl 912px:text-2xl 912px:hover:text-[1.6rem]" href="#">
+            <a
+                class="w-full h-full relative flex text-xs transition ease-in-out rounded-xl hover:opacity-90 360px:text-base 540px:text-lg 768px:text-xl 912px:text-2xl 912px:hover:text-[1.6rem]"
+                href="${object.href}"
+            >
                 <div class="w-full h-full pb-3 absolute inset-0 flex flex-col justify-end items-center rounded-xl bg-black bg-opacity-20 z-20 768px:pb-4">
                     <h1 class="font-inter font-semibold text-white">${object.brandName}</h1>
                     <p class="font-seeds font-normal text-xs text-stone-300 1024px:text-[1.1rem]">เลือกดูรถยนต์ที่ต้่องการ</p>

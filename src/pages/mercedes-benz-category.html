@@ -1,15 +1,497 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="h-screen bg-white overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=no" />
-    <title>Authentication - The best dealership option for you</title>
-    <link rel="stylesheet" type="text/css" href="./../index.css" />
+    <title>Mercedes-Benz category - The best dealership option for you</title>
+    <link rel="stylesheet" type="text/css" href="./../assets/index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./../assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="./../assets/favicon.ico" />
+    <link rel="manifest" href="./../assets/site.webmanifest" />
+    <link rel="mask-icon" href="./../assets/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="sg:site_name" content="Modular" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="The best dealer for your supercar &nbsp;—&nbsp; Modular" />
+    <meta property="og:description" content="The best dealer choice for you" />
+    <meta property="og:url" content="https://potential-static-ecommerce.pages.dev/" />
+    <meta property="article:publisher" content="https://potential-static-ecommerce.pages.dev/" />
+    <meta property="article:modified_time" content="2021-12-17T19:50:54+00:00" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="./../assets/opengraph.jpg" />
 </head>
 
 <body class="h-auto antialiased">
+    <header id="header-navigation-area"
+        class="sticky top-0 left-0 w-full h-12 font-seeds border-b shadow-sm bg-white z-50 1024px:h-16">
+        <div class="container h-full px-2 mx-auto max-w-7xl 1024px:px-0">
+            <div class="relative w-full h-full flex flex-row justify-between items-center text-black">
+                <a class="inline-flex items-center font-inter font-bold select-none text-xs transition ease-in-out hover:opacity-80 focus:outline-none 360px:text-sm 768px:text-base 912px:text-lg"
+                    href="./../index.html">
+                    <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] 768px:w-[24px] 768px:h-[24px]"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    MODULAR
+                </a>
+                <div class="hidden relative flex-row font-seeds space-x-4 justify-center items-center 1024px:flex">
+                    <button id="popover-menu"
+                        class="popover-button inline-flex items-center transition ease-in-out hover:text-stone-400">
+                        แบรนด์รถยนต์&nbsp;<svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                            stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </button>
+                    <div id="popover-brand-modular"
+                        class="hidden popover-content w-[26rem] h-auto absolute top-9 -left-4 z-[100] shadow rounded-xl text-black bg-white">
+                        <div class="w-full h-full flex flex-col justify-between items-center">
+                            <div class="w-full h-full p-3 flex flex-col space-y-2 justify-center items-center">
+                                <a href="./porsche-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche_wappen.svg.png"
+                                            alt="porsche's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">Porsche</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์พอร์ชจากทางเรา</h2>
+                                    </div>
+                                </a>
+                                <a href="./ferrari-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/ferrari_logo.svg.png"
+                                            alt="ferrari's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">Ferrari</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์เฟอร์รารี่จากทางเรา</h2>
+                                    </div>
+                                </a>
+                                <a href="./mclaren-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mclaren_automotive.svg.png"
+                                            alt="mclaren's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">McLaren</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์แม็คลาเรนจากทางเรา</h2>
+                                    </div>
+                                </a>
+                                <a href="./lamborghini-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/lamborghini.svg"
+                                            alt="lamborghini's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">Lamborghini</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์ลัมโบร์กีนีจากทางเรา</h2>
+                                    </div>
+                                </a>
+                                <a href="./mercedes-benz-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mercedes-logo.svg.png"
+                                            alt="mercedes-benz's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">Mercedes Benz</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์เมอร์เซเดส-เบนซ์จากทางเรา</h2>
+                                    </div>
+                                </a>
+                                <a href="./audi-category.html"
+                                    class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
+                                    <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
+                                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/audi_logo.svg.png"
+                                            alt="audi's brand"
+                                            class="w-full object-contain rounded-xl z-10 max-h-full" />
+                                    </div>
+                                    <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
+                                        <h1 class="font-inter font-semibold">Audi</h1>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์ออดี้จากทางเรา</h2>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="w-full h-full p-3 max-h-[6rem] rounded-b-xl bg-gray-100">
+                                <a href="#"
+                                    class="w-full h-full p-3 flex flex-col justify-start items-start rounded-xl transition ease-in-out hover:bg-gray-200">
+                                    <h1 class="font-seeds font-semibold">ค้นหาแบรนด์รถยนต์เพิ่มเติม</h1>
+                                    <h2 class="font-seeds text-gray-500">กดที่นี่เพื่อค้นหาแบรนด์รถยนต์นอกเหนือจากเมนู
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="transition ease-in-out hover:opacity-70">แต่งรถยนต์</a>
+                    <a href="#" class="transition ease-in-out hover:opacity-70">บริการซื้อขาย</a>
+                    <a href="#" class="transition ease-in-out hover:opacity-70">ศูนย์ช่วยเหลือ</a>
+                </div>
+                <div class="hidden flex-row font-seeds space-x-4 justify-center items-center 1024px:flex">
+                    <div id="authentication-state" class="flex flex-row space-x-2 justify-center items-center">
+                        <!-- This element will implemented by JavaScript for Authentication Information -->
+                    </div>
+                    <a href="#" class="inline-flex items-center">
+                        <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] text-black"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        &nbsp;
+                        <span id="cart-counter" class="text-black align-middle">
+                            <!-- Cart Counter that's for who authorized (Implemented by JavaScript) -->
+                        </span>
+                    </a>
+                </div>
+                <button type="menu" id="navigation-menu"
+                    class="dropdown-modular-button block focus:outline-none 1024px:hidden"
+                    onclick="() => onDropdown();">
+                    <svg class="w-[20px] h-[20px] 360px:w-[24px] 360px:h-[24px] 768px:w-[28px] 768px:h-[28px]"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Menu with Responsived -->
+            <div id="modular-dropdown-menu"
+                class="hidden dropdown-modular w-full h-[20rem] absolute inset-x-0 top-[2.97rem] backdrop-blur-lg shadow-lg glassmorphism">
+                Dropdown
+            </div>
+            <!-- End -->
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full h-96 bg-gray-50">
+        <div class="container h-full px-2 mx-auto border-b max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full h-full flex flex-col space-y-3 justify-center items-center">
+                <h1 class="font-bold text-5xl">รถยนต์ยี่ห้อเมอร์เซเดส-เบนซ์</h1>
+                <p class="font-normal text-xl text-neutral-500">
+                    สินค้าเข้าใหม่ประจำโชว์รูมของเราที่คุณสามารถเป็นเจ้าของได้แล้วพร้อมกับโปรโมชั่นสุดพิเศษ</p>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- New Arrival Section -->
+    <section class="w-full h-auto py-8 bg-gray-50">
+        <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full mb-5 px-3 flex flex-row justify-between items-center">
+                <button class="inline-flex items-center transition ease-in-out hover:opacity-75">
+                    <span>จัดเรียง</span>&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px] text-neutral-400">
+                        <path fill-rule="evenodd"
+                            d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="flex flex-row space-x-6 justify-center items-center">
+                    <button
+                        class="flex flex-row space-x-2 justify-center items-center transition ease-in-out hover:opacity-75">
+                        <span>หมวดหมู่</span>
+                        <span class="w-5 h-5 flex justify-center items-center rounded bg-neutral-200">
+                            <div class="text-xs">1</div>
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px] text-neutral-400">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button class="inline-flex items-center transition ease-in-out hover:opacity-75">
+                        <span>แบรนด์</span>&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px] text-neutral-400">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button class="inline-flex items-center transition ease-in-out hover:opacity-75">
+                        <span>เครื่องยนต์</span>&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px] text-neutral-400">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                    <button class="inline-flex items-center transition ease-in-out hover:opacity-75">
+                        <span>เกียร์</span>&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px] text-neutral-400">
+                            <path fill-rule="evenodd"
+                                d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="first-part-of-mercedes-benz" class="w-full h-full grid grid-cols-3 grid-rows-2 gap-3">
+                <!-- First Part of Mercedes-Benz Category that's implemented by JavaScript -->
+            </div>
+            <div class="w-full h-[19rem] my-8 bg-gray-50 912px:h-[29rem]">
+                <div class="container h-full px-3 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
+                    <div
+                        class="w-full h-[16rem] relative flex rounded-xl bg-stone-100 912px:h-[24rem] 1024px:h-[28rem]">
+                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Koenigsegg_Jesko-new-arrivals.webp"
+                            alt="mercedes benz amg" class="w-full h-full object-cover select-none rounded-xl z-10"
+                            loading="lazy" />
+                        <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>
+                        <div
+                            class="w-full h-full p-5 absolute inset-y-0 flex flex-col text-white justify-between items-center rounded-xl backdrop-blur left-0 bg-black bg-opacity-70 z-20 912px:w-[20rem] 912px:rounded-l-xl 912px:rounded-r-none 1024px:w-[26rem]">
+                            <div class="w-full flex flex-col font-seeds space-y-1 justify-start items-start">
+                                <h1 class="font-semibold text-lg 768px:text-2xl">กำลังหาของแต่งรถยนต์งั้นเหรอ?</h1>
+                                <p class="font-normal text-xs text-stone-400 912px:text-lg">อัปเกรดรถยนต์ของคุณได้
+                                    ไม่ว่าคุณจะเป็นลูกค้าเราหรือไม่ใช่ คุณก็สามารถใช้บริการกับทางเราได้</p>
+                            </div>
+                            <a class="w-full py-2 border border-gray-400 text-[0.65rem] rounded-lg font-semibold text-center transition ease-in-out bg-white bg-opacity-0 hover:bg-opacity-10 focus:outline-none 768px:py-3 768px:text-xs 912px:py-4 912px:text-lg"
+                                href="#">
+                                ดูของแต่งรถยนต์
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="second-part-of-mercedes-benz" class="w-full h-full grid grid-cols-3 grid-rows-2 gap-3">
+                <!-- Second Part of Mercedes-Benz Category that's implemented by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Footer Bar -->
+    <footer class="w-full h-auto pb-6 border-t bg-white">
+        <div class="container h-full mx-auto px-3 max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="my-16 w-full h-full grid grid-cols-1 gap-y-10 gap-x-[5rem] font-normal text-base text-gray-500 justify-items-start 768px:grid-cols-2 768px:w-[30rem] 768px:gap-x-[12rem] 912px:w-full 912px:my-20 912px:grid-cols-4 912px:gap-y-0 912px:text-lg 912px:space-y-0">
+                    <div id="products" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Product elements that's injected by JavaScript -->
+                    </div>
+                    <div id="customer-service"
+                        class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Customer service elements that's injected by JavaScript -->
+                    </div>
+                    <div id="company" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Company elements that's injected by JavaScript -->
+                    </div>
+                    <div id="legal" class="flex flex-col space-y-3 justify-start items-start 912px:space-y-6">
+                        <!-- Legal elements that's injected by JavaScript -->
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-8 justify-center items-center">
+                    <div class="w-full grid grid-cols-1 gap-3 912px:grid-cols-2 912px:gap-20">
+                        <div
+                            class="w-full h-[14.5rem] py-6 px-6 rounded-xl bg-[#f3f4f6] overflow-hidden 768px:h-[15.5rem] 912px:w-[29.5rem] 912px:h-[22rem] 912px:py-14 912px:px-28 1024px:w-[39rem] 1024px:h-[18rem] 1024px:py-14 1024px:px-28">
+                            <div class="w-full h-full flex-col font-seeds space-y-10 justify-center items-center">
+                                <div
+                                    class="flex flex-col space-y-1 justify-center items-center 912px:justify-center 912px:items-centejustify-center 1024px:justify-start 1024px:items-start">
+                                    <h1
+                                        class="font-semibold text-center text-base text-black 768px:text-lg 912px:text-2xl 912px:text-center 1024px:text-start">
+                                        ลงทะเบียนรับข่าวสาร</h1>
+                                    <p
+                                        class="font-normal text-center text-[0.66rem] text-gray-500 360px:text-sm 912px:text-base 912px:text-center 1024px:text-start">
+                                        คุณสามารถลงทะเบียนเพื่อรับข่าวสารและโปรโมชั่นพิเศษจากทางเราได้โดยใส่อีเมลล์เพื่อรับข้อมูลข่าวสาร
+                                    </p>
+                                </div>
+                                <form
+                                    class="flex flex-col space-x-0 space-y-2 1024px:flex-row 1024px:space-x-4 1024px:space-y-0"
+                                    method="post">
+                                    <input type="email" name="email"
+                                        class="w-full px-2 py-2 rounded-lg border text-[0.60rem] shadow-sm outline-none 360px:text-xs 412px:text-sm 768px:text-base"
+                                        placeholder="กรอกอีเมลล์ของคุณ" autocomplete="off" required />
+                                    <input type="submit" name="submit"
+                                        class="px-2 py-2 cursor-pointer text-xs rounded-lg bg-black text-white transition ease-in-out hover:bg-opacity-75 focus:outline-none 768px:py-3 768px:text-base 912px:px-5 912px:py-2"
+                                        value="ลงทะเบียน" />
+                                </form>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full h-[18rem] relative flex justify-center items-center rounded-xl bg-black overflow-hidden 912px:h-full 1024px:h-[18rem]">
+                            <div
+                                class="py-14 px-8 w-full h-full absolute inset-0 flex flex-col space-y-1.5 text-white justify-center items-center z-20 912px:py-14 912px:px-28">
+                                <h1
+                                    class="font-seeds font-bold text-xl 360px:text-2xl 768px:text-4xl 912px:text-xl 1024px:text-3xl">
+                                    โปรโมชั่นในปัจจุบัน
+                                </h1>
+                                <p
+                                    class="w-auto text-center text-xs text-gray-300 360px:text-sm 768px:text-2xl 912px:w-[23rem] 912px:text-base 1024px:text-lg">
+                                    คุณสามารถใช้โปรโมชั่นในปัจจุบันที่เรากำลังจัดอยู่เพื่ิอซื้อรถยนต์จากทางเราได้ <a
+                                        class="inline-flex items-center font-semibold text-[0.70rem] text-white transition ease-in-out hover:text-opacity-75 focus:outline-none 360px:text-sm 768px:text-xl 912px:text-base"
+                                        href="#">ดูเลย&nbsp;<svg
+                                            class="w-[14px] h-[14px] 360px:w-[15px] 360px:h-[15px] 768px:w-[20px] 768px:h-[20px] text-white"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                        </svg>
+                                    </a></p>
+                            </div>
+                            <div class="w-full h-full absolute inset-0 bg-black rounded-xl bg-opacity-50 z-10"></div>
+                            <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche-interior.webp"
+                                alt="porsche interior" class="w-full h-full object-cover select-none rounded-xl z-0"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-row font-inter font-light text-gray-600 justify-between items-center">
+                        <p class="text-xs 912px:text-base">&copy; 2022 All Rights Reserved</p>
+                        <div class="flex flex-row divide-x space-x-6 justify-center items-center 912px:space-x-8">
+                            <div
+                                class="hidden flex-row font-seeds font-normal space-x-8 justify-center items-center text-gray-500 768px:space-x-6 768px:text-xs 768px:flex 912px:text-base">
+                                <a href="#"
+                                    class="transition ease-in-out hover:text-gray-800 focus:outline-none">การช่วยการเข้าถึง</a>
+                                <a href="#"
+                                    class="transition ease-in-out hover:text-gray-800 focus:outline-none">นโยบายหลังการขาย</a>
+                                <a href="#"
+                                    class="transition ease-in-out hover:text-gray-800 focus:outline-none">ทีมงาน</a>
+                            </div>
+                            <a href="#" class="mx-2 focus:outline-none">
+                                <img src="./../assets/thailand-flag.svg" alt="thailand" width="18" height="18" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End -->
+
+    <script type="module">
+        import onAsyncMercedesBenzRender from './../components/core/mercedes-benz-category-page.js';
+        import onAsyncFooterHyperlinkRender from './../components/core/footer-components.js';
+
+        import splitClassNames from './../helper/splitClassNames.js';
+
+        import RegistrationPage from './registration.html';
+        import AuthenticationPage from './authentication.html';
+
+        function PopoverAction() {
+            if (document.getElementById('popover-brand-modular').classList.contains('hidden')) {
+                document.getElementById('popover-brand-modular').classList.remove('hidden');
+                document.getElementById('popover-brand-modular').classList.toggle('block');
+            } else {
+                document.getElementById('popover-brand-modular').classList.remove('block');
+                document.getElementById('popover-brand-modular').classList.toggle('hidden');
+            }
+        }
+
+        document.getElementById('popover-menu').addEventListener('click', PopoverAction);
+
+        function dropAuthorizedTokenAction() {
+            localStorage.removeItem('email_address');
+            localStorage.removeItem('authorized');
+
+            window.location.href = './index.html';
+        }
+
+        function useUnauthorizedAction() {
+            const buttonElement = document.createElement('button');
+            const classNames = splitClassNames(
+                'text-stone-600 transition ease-in-out hover:text-red-400',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px]">
+                <path stroke-linecap=" round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+            </svg>
+            `;
+            buttonElement.addEventListener("click", () => dropAuthorizedTokenAction());
+
+            return buttonElement;
+        }
+
+        function useRegistrationButton() {
+            const buttonElement = document.createElement('button');
+
+            buttonElement.classList.add('text-stone-400');
+            buttonElement.type = 'button';
+            buttonElement.textContent = 'คุณยังไม่มีบัญชี?'
+            buttonElement.addEventListener("click", () => window.location.href = RegistrationPage);
+
+            return buttonElement;
+        }
+
+        function useAuthenticationButton() {
+            const buttonElement = document.createElement('button');
+
+            const classNames = splitClassNames(
+                'inline-flex items-center transition ease-in-out hover:text-stone-300',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.innerHTML = `
+            เข้าสู่ระบบ
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+            </svg>
+            `;
+            buttonElement.addEventListener("click", () => window.location.href = AuthenticationPage);
+
+            return buttonElement;
+        }
+
+        var authenticationElement = document.getElementById('authentication-state');
+        var cartCounterElement = document.getElementById('cart-counter');
+
+        window.addEventListener('load', (event) => {
+            onAsyncMercedesBenzRender();
+            onAsyncFooterHyperlinkRender();
+
+            if (localStorage.getItem('authorized')) {
+                authenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                authenticationElement.appendChild(useUnauthorizedAction());
+                cartCounterElement.innerHTML = `2`;
+            } else {
+                authenticationElement.appendChild(useRegistrationButton());
+                authenticationElement.appendChild(useAuthenticationButton());
+                cartCounterElement.innerHTML = `0`;
+            }
+        });
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.popover-button')) {
+                let popover = document.getElementsByClassName('popover-content');
+
+                for (let index = 0; index < popover.length; index++) {
+                    let openPopover = popover[index];
+
+                    if (openPopover.classList.contains('block')) {
+                        openPopover.classList.remove('block');
+                        openPopover.classList.toggle('hidden');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

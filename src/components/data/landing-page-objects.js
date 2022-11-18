@@ -15,31 +15,37 @@ export const Brands = [
     {
         imageUrl: PorscheCaymanImage,
         alt: "porsche's branding",
+        href: './pages/porsche-category.html',
         brandName: 'Porsche',
     },
     {
         imageUrl: FerrariSF90Image,
         alt: "ferrari's branding",
+        href: './pages/ferrari-category.html',
         brandName: 'Ferrari',
     },
     {
         imageUrl: McLaren765LTImage,
         alt: "mclaren's branding",
+        href: './pages/mclaren-category.html',
         brandName: 'McLaren',
     },
     {
         imageUrl: LamborghiniAventadorImage,
         alt: "lamborghini's branding",
+        href: './pages/lamborghini-category.html',
         brandName: 'Lamborghini',
     },
     {
         imageUrl: MercedesBenzChairmanImage,
         alt: "mercedes benz's branding",
+        href: './pages/mercedes-benz-category.html',
         brandName: 'Mercedes Benz',
     },
     {
         imageUrl: AudoR8V10Image,
         alt: "audi's branding",
+        href: './pages/audi-category.html',
         brandName: 'Audi',
     },
 ];
