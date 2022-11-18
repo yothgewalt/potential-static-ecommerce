@@ -29,6 +29,7 @@
 </head>
 
 <body class="h-screen text-black antialiased">
+    <!-- Navigation Bar -->
     <header id="header-navigation-area"
         class="sticky top-0 left-0 w-full h-12 font-seeds border-b shadow-sm bg-white z-50 1024px:h-16">
         <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
@@ -93,15 +94,20 @@
 
         </div>
     </header>
+    <!-- End -->
 
     <!-- Product Detail Section -->
-    <section class="w-full h-[113rem] py-8 bg-inherit">
+    <section class="w-full h-auto bg-inherit">
         <div class="container h-full mx-auto px-3 max-w-7xl overflow-hidden 1024px:px-0">
-            <div class="w-full h-[64rem] mb-12 flex flex-row space-x-8 justify-between items-center">
+            <div id="previous-page" class="my-4 flex justify-start items-start">
+                <!-- Previous page was implemented by JavaScript -->
+            </div>
+            <div
+                class="w-full h-[60rem] flex flex-row space-x-8 justify-between items-center max-h-[60rem] overflow-hidden">
                 <div id="product-preview-image" class="w-full h-full rounded-xl relative flex max-w-[50%]">
                     <!-- Product image was implemented by JavaScript -->
                 </div>
-                <div class="w-full h-full rounded-xl bg-inherit max-w-[50%]">
+                <div class="w-full h-full border-b bg-inherit max-w-[50%] max-h-full">
                     <div class="w-full flex flex-row font-inter justify-between items-start">
                         <span class="flex flex-col justify-start items-start">
                             <h1 id="product-name" class="text-2xl font-semibold">
@@ -115,9 +121,10 @@
                             <!-- Product price was implemented by JavaScript -->
                         </span>
                     </div>
-                    <div class="w-full my-10 flex flex-col space-y-2 justify-start items-start">
+                    <div class="w-full h-[10rem] my-10 flex flex-col space-y-2 justify-start items-start">
                         <h1 class="font-seeds font-bold text-2xl">รายละเอียดรถยนต์</h1>
-                        <p id="product-description" class="font-seeds font-normal text-lg text-neutral-500">
+                        <p id="product-description"
+                            class="font-seeds font-normal text-lg overflow-y-auto text-neutral-500">
                             <!-- Product description was implemented by JavaScript -->
                         </p>
                     </div>
@@ -128,25 +135,35 @@
                             <div class="flex flex-row space-x-10 justify-start items-start">
                                 <span class="flex flex-col justify-start items-start">
                                     <h1 class="text-gray-500">Drive Train</h1>
-                                    <span id="drive-train" class="font-bold text-xl"></span>
+                                    <span id="drive-train" class="font-bold text-xl">
+                                        <!-- Drive Train was implemented by JavaScript -->
+                                    </span>
                                 </span>
                                 <span class="flex flex-col justify-start items-start">
                                     <h1 class="text-gray-500">Fuel System</h1>
-                                    <span id="fuel-system" class="font-bold text-xl"></span>
+                                    <span id="fuel-system" class="font-bold text-xl">
+                                        <!-- Fuel System was implemented by JavaScript -->
+                                    </span>
                                 </span>
                                 <span class="flex flex-col justify-start items-start">
                                     <h1 class="text-gray-500">Maximum Torque</h1>
-                                    <span id="maximum-torque" class="font-bold text-lg"></span>
+                                    <span id="maximum-torque" class="font-bold text-lg">
+                                        <!-- Maximum Torque was implemented by JavaScript -->
+                                    </span>
                                 </span>
                             </div>
                             <div class="flex flex-row space-x-10 justify-start items-start">
                                 <span class="flex flex-col justify-start items-start">
                                     <h1 class="text-gray-500">Maximum Horse Power</h1>
-                                    <span id="maximum-horse-power" class="font-bold text-xl"></span>
+                                    <span id="maximum-horse-power" class="font-bold text-xl">
+                                        <!-- Maximum Horse Power was implemented by JavaScript -->
+                                    </span>
                                 </span>
                                 <span class="flex flex-col justify-start items-start">
                                     <h1 class="text-gray-500">Engine Type</h1>
-                                    <span id="second-engine-type" class="font-bold text-xl"></span>
+                                    <span id="second-engine-type" class="font-bold text-xl">
+                                        <!-- Engine Type was implemented by JavaScript -->
+                                    </span>
                                 </span>
                             </div>
                         </div>
@@ -201,26 +218,31 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- End -->
+
+    <!-- Other interesting products -->
+    <section class="w-full h-[45rem] bg-inherit">
+        <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
             <hr class="my-8" />
-            <div class="w-full h-auto bg-inherit">
-                <div class="w-full flex flex-col space-y-4 justify-center items-center">
-                    <div class="w-full flex flex-row justify-between items-center">
-                        <h1 class="font-semibold text-2xl">รถยนต์คันอื่นที่คุณอาจจะชอบ</h1>
-                        <a href="#"
-                            class="inline-flex items-center text-lg transition ease-in-out text-blue-500 hover:opacity-75">
-                            <span>ดูทั้งหมด</span>&nbsp;
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]">
-                                <path fill-rule="evenodd"
-                                    d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </div>
-                    <div id="other-interesting-products"
-                        class="grid grid-cols-4 gap-3 justify-items-center content-center place-content-center">
-                        <!-- SS -->
-                    </div>
+            <div class="w-full flex flex-col space-y-4 justify-center items-center">
+                <div class="w-full flex flex-row justify-between items-center">
+                    <h1 class="font-semibold text-2xl">รถยนต์คันอื่นที่คุณอาจจะชอบ</h1>
+                    <a href="#"
+                        class="inline-flex items-center text-lg transition ease-in-out text-blue-500 hover:opacity-75">
+                        <span>ดูทั้งหมด</span>&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]">
+                            <path fill-rule="evenodd"
+                                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <div id="other-interesting-products"
+                    class="grid grid-cols-4 gap-3 justify-items-center content-center place-content-center">
+                    <!-- Other interesting products was implemented by JavaScript -->
                 </div>
             </div>
         </div>
@@ -326,6 +348,8 @@
     <script type="text/javascript">
         let authenticationElement = document.getElementById('authentication-state');
         let cartCounterElement = document.getElementById('cart-counter');
+
+        let previousPageElement = document.getElementById('previous-page');
 
         let productPreviewImageElement = document.getElementById('product-preview-image');
         let productNameElement = document.getElementById('product-name');
@@ -497,7 +521,7 @@
                                 ${object.carPrice.toLocaleString()} บาท
                             </span>
                         </div>
-                        <a href="#" class="w-full py-2 flex shadow-sm font-medium rounded-md justify-center items-center transition ease-in-out bg-[#f3f5f6] hover:bg-[#e5e6e7]">ดูรายละเอียด</a>
+                        <a href="#" class="w-full py-2 flex font-medium rounded-md justify-center items-center transition ease-in-out text-white bg-black hover:bg-opacity-80">ดูรายละเอียด</a>
                     </div>
                 </div>
                 `;
@@ -627,7 +651,7 @@
             buttonElement.classList.add('text-stone-400');
             buttonElement.type = 'button';
             buttonElement.textContent = 'คุณยังไม่มีบัญชี?'
-            buttonElement.addEventListener("click", () => window.location.href = './registration.html');
+            buttonElement.addEventListener("click", () => window.location.href = './pages/registration.html');
 
             return buttonElement;
         }
@@ -648,7 +672,29 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
             </svg>
             `;
-            buttonElement.addEventListener("click", () => window.location.href = './authentication.html');
+            buttonElement.addEventListener("click", () => window.location.href = './pages/authentication.html');
+
+            return buttonElement;
+        }
+
+        function usePreviousPageButton(href) {
+            const buttonElement = document.createElement('button');
+
+            const classNames = splitClassNames(
+                'inline-flex items-center text-lg text-blue-500 transition ease-in-out hover:text-blue-700',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M20.25 12a.75.75 0 01-.75.75H6.31l5.47 5.47a.75.75 0 11-1.06 1.06l-6.75-6.75a.75.75 0 010-1.06l6.75-6.75a.75.75 0 111.06 1.06l-5.47 5.47H19.5a.75.75 0 01.75.75z" clip-rule="evenodd" />
+            </svg>
+            &nbsp;
+            <span>กลับไปยังหน้าเดิม</span>
+            `;
+            buttonElement.addEventListener("click", () => window.location.href = href);
 
             return buttonElement;
         }
@@ -656,6 +702,12 @@
         window.addEventListener('load', (event) => {
             onOtherInterestingProductsLoader();
             onAsyncFooterHyperlinkRender();
+
+            if (localStorage.getItem('from_page')) {
+                if (localStorage.getItem('from_page') === 'new-arrivals') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/new-arrivals-category.html'));
+                }
+            }
 
             if (localStorage.getItem('car_name')) {
                 productNameElement.textContent = localStorage.getItem('brand') + ' ' + localStorage.getItem('car_name');

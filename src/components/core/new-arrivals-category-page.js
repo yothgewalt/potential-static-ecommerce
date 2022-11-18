@@ -10,6 +10,7 @@ function withFirstPartOfNewArrivalLoader() {
             object.imageUrl, object.alt, object.brand, object.carName, object.driveTrain,
             object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
             object.TranmissionSpeeds, object.description, object.priceCar, object.carAvailable,
+            'new-arrivals',
         ));
     });
 }
@@ -20,6 +21,7 @@ function withSecondPartOfNewArrivalLoader() {
             object.imageUrl, object.alt, object.brand, object.carName, object.driveTrain,
             object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
             object.TranmissionSpeeds, object.description, object.priceCar, object.carAvailable,
+            'new-arrivals',
         ));
     });
 }

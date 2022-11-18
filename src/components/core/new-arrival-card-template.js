@@ -5,6 +5,7 @@ export default function NewArrivalCardTemplate(
     imageUrl, alternative, brand, carName, driveTrain,
     engineType, fuelSystem, maximumHorsePower, maximumTorque,
     transmissionSpeeds, description, priceCar, carAvailable,
+    fromPage,
 ) {
     const buttonElement = document.createElement('button');
     const classNames = splitClassNames(
@@ -36,7 +37,8 @@ export default function NewArrivalCardTemplate(
     buttonElement.addEventListener("click", () => setProductState(
         imageUrl, alternative, brand, carName, driveTrain,
         engineType, fuelSystem, maximumHorsePower, maximumTorque,
-        transmissionSpeeds, description, priceToLocaleString, carAvailable
+        transmissionSpeeds, description, priceToLocaleString, carAvailable,
+        fromPage,
     ));
 
     return buttonElement;

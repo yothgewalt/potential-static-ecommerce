@@ -4,6 +4,7 @@ export function setProductState(
     imageUrl, alternative, brand, carName, driveTrain,
     engineType, fuelSystem, maximumHorsePower, maximumTorque,
     transmissionSpeeds, description, priceCar, carAvailable,
+    fromPage,
 ) {
     localStorage.setItem('image_url', imageUrl);
     localStorage.setItem('alt', alternative);
@@ -18,6 +19,7 @@ export function setProductState(
     localStorage.setItem('description', description);
     localStorage.setItem('price_car', priceCar);
     localStorage.setItem('car_available', carAvailable);
+    localStorage.setItem('from_page', fromPage);
 
     window.location.href = ProductDetailPage;
 }
