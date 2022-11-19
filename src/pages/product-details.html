@@ -155,10 +155,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
-                        &nbsp;
-                        <span id="cart-counter" class="text-black align-middle">
-                            <!-- Cart Counter that's for who authorized (Implemented by JavaScript) -->
-                        </span>
                     </a>
                 </div>
                 <button type="menu" id="responsived-navigation-menu"
@@ -360,7 +356,7 @@
                         <a href="./shopping-cart.html"
                             class="w-full h-full flex rounded-xl justify-center items-center transition ease-in-out text-white bg-black hover:opacity-90">
                             <span class="flex flex-col justify-center items-center">
-                                <h1 class="font-bold text-2xl">เลือกซื้อรถยนต์</h1>
+                                <h1 class="font-bold text-2xl">เลือกรถยนต์</h1>
                                 <h2 class="text-gray-200">คุณจะได้รับใบจองเพื่อแสดงความเป็นเจ้าของ</h2>
                             </span>
                         </a>
@@ -497,7 +493,6 @@
     <script type="text/javascript">
         let authenticationElement = document.getElementById('authentication-state');
         var responsivedAuthenticationElement = document.getElementById('responsived-authentication-element');
-        let cartCounterElement = document.getElementById('cart-counter');
 
         let previousPageElement = document.getElementById('previous-page');
 
@@ -1016,17 +1011,15 @@
             }
 
             if (localStorage.getItem('authorized')) {
-                authenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                authenticationElement.innerHTML = `<a href="./order-history.html">${localStorage.getItem('email_address')}</a>`.trim();
                 authenticationElement.appendChild(useUnauthorizedAction());
-                responsivedAuthenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                responsivedAuthenticationElement.innerHTML = `<a href="./order-history.html">${localStorage.getItem('email_address')}</a>`.trim();
                 responsivedAuthenticationElement.appendChild(useResponsivedUnauthorizedAction());
-                cartCounterElement.innerHTML = `2`;
             } else {
                 authenticationElement.appendChild(useRegistrationButton());
                 authenticationElement.appendChild(useAuthenticationButton());
                 responsivedAuthenticationElement.appendChild(useResponsivedAuthenticationButton());
                 responsivedAuthenticationElement.appendChild(useResponsivedRegistrationButton());
-                cartCounterElement.innerHTML = `0`;
             }
         });
 

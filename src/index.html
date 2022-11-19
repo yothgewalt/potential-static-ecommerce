@@ -140,8 +140,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="./pages/car-accessories.html"
-                        class="transition ease-in-out hover:text-stone-400">แต่งรถยนต์</a>
+                    <a href="#" class="transition ease-in-out hover:text-stone-400">แต่งรถยนต์</a>
                     <a href="#" class="transition ease-in-out hover:text-stone-400">บริการซื้อขาย</a>
                     <a href="#" class="transition ease-in-out hover:text-stone-400">ศูนย์ช่วยเหลือ</a>
                 </div>
@@ -156,10 +155,6 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
-                        &nbsp;
-                        <span id="cart-counter" class="align-middle">
-                            <!-- Cart Counter that's for who authorized (Implemented by JavaScript) -->
-                        </span>
                     </a>
                 </div>
                 <button type="menu" id="responsived-navigation-menu"
@@ -377,7 +372,7 @@
                             ไม่ว่าคุณจะเป็นลูกค้าเราหรือไม่ใช่ คุณก็สามารถใช้บริการกับทางเราได้</p>
                     </div>
                     <a class="w-full py-2 border border-gray-400 text-[0.65rem] rounded-lg font-semibold text-center transition ease-in-out bg-white bg-opacity-0 hover:bg-opacity-10 focus:outline-none 768px:py-3 768px:text-xs 912px:py-4 912px:text-lg"
-                        href="./pages/car-accessories.html">
+                        href="#">
                         ดูของแต่งรถยนต์
                     </a>
                 </div>
@@ -471,6 +466,7 @@
                                     class="transition ease-in-out hover:text-gray-800 focus:outline-none">นโยบายหลังการขาย</a>
                                 <a href="#"
                                     class="transition ease-in-out hover:text-gray-800 focus:outline-none">ทีมงาน</a>
+                                <a href="./pages/order-history.html" class="hidden">Order History</a>
                             </div>
                             <a href="#" class="mx-2 focus:outline-none">
                                 <img src="./assets/thailand-flag.svg" alt="thailand" width="18" height="18" />
@@ -629,24 +625,21 @@
 
         var authenticationElement = document.getElementById('authentication-state');
         var responsivedAuthenticationElement = document.getElementById('responsived-authentication-element');
-        var cartCounterElement = document.getElementById('cart-counter');
 
         window.addEventListener('load', (event) => {
             onAsyncLandingPageRender();
             onAsyncFooterHyperlinkRender();
 
             if (localStorage.getItem('authorized')) {
-                authenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                authenticationElement.innerHTML = `<a href="./pages/order-history.html">${localStorage.getItem('email_address')}</a>`.trim();
                 authenticationElement.appendChild(useUnauthorizedAction());
-                responsivedAuthenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                responsivedAuthenticationElement.innerHTML = `<a href="./pages/order-history.html">${localStorage.getItem('email_address')}</a>`.trim();
                 responsivedAuthenticationElement.appendChild(useResponsivedUnauthorizedAction());
-                cartCounterElement.innerHTML = `2`;
             } else {
                 authenticationElement.appendChild(useRegistrationButton());
                 authenticationElement.appendChild(useAuthenticationButton());
                 responsivedAuthenticationElement.appendChild(useResponsivedAuthenticationButton());
                 responsivedAuthenticationElement.appendChild(useResponsivedRegistrationButton());
-                cartCounterElement.innerHTML = `0`;
             }
         });
 

@@ -4,7 +4,7 @@ export function setProductState(
     imageUrl, alternative, brand, carName, driveTrain,
     engineType, fuelSystem, maximumHorsePower, maximumTorque,
     transmissionSpeeds, description, priceCar, carAvailable,
-    fromPage,
+    rawPriceCar, fromPage,
 ) {
     localStorage.setItem('image_url', imageUrl);
     localStorage.setItem('alt', alternative);
@@ -17,6 +17,7 @@ export function setProductState(
     localStorage.setItem('maximum_torque', maximumTorque);
     localStorage.setItem('transmission_speeds', transmissionSpeeds);
     localStorage.setItem('description', description);
+    localStorage.setItem('raw_price_car', rawPriceCar);
     localStorage.setItem('price_car', priceCar);
     localStorage.setItem('car_available', carAvailable);
     localStorage.setItem('from_page', fromPage);

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" id="shopping-cart-root" class="hidden overflow-x-hidden bg-gray-50">
+<html lang="en" id="order-details-root" class="hidden h-screen bg-white overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="initial-scale=1, viewport-fit=cover, user-scalable=no" />
-    <title>Modular — The best dealer choice for you.</title>
+    <title>Order Details - The best dealership option for you</title>
     <link rel="stylesheet" type="text/css" href="./../assets/index.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="./../assets/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./../assets/favicon-32x32.png" />
@@ -29,9 +29,8 @@
 </head>
 
 <body class="h-auto antialiased">
-    <!-- Navigation Bar & Hero Section -->
     <header id="header-navigation-area"
-        class="sticky top-0 left-0 w-full h-12 mb-12 font-seeds border-b shadow-sm bg-white z-50 1024px:h-16">
+        class="sticky top-0 left-0 w-full h-12 font-seeds border-b shadow-sm bg-white z-50 1024px:h-16">
         <div class="container h-full px-2 mx-auto max-w-7xl 1024px:px-0">
             <div class="relative w-full h-full flex flex-row justify-between items-center text-black">
                 <a class="inline-flex items-center font-inter font-bold select-none text-xs transition ease-in-out hover:opacity-80 focus:outline-none 360px:text-sm 768px:text-base 912px:text-lg"
@@ -54,7 +53,7 @@
                         </svg>
                     </button>
                     <div id="popover-brand-modular"
-                        class="hidden popover-content w-[26rem] h-auto border-t absolute top-9 -left-4 z-[100] shadow rounded-xl text-black bg-white">
+                        class="hidden popover-content w-[26rem] h-auto border-t absolute top-9 -left-4 z-50 shadow rounded-xl text-black bg-white">
                         <div class="w-full h-full flex flex-col justify-between items-center">
                             <div class="w-full h-full p-3 flex flex-col space-y-2 justify-center items-center">
                                 <a href="./porsche-category.html"
@@ -114,7 +113,7 @@
                                     </div>
                                     <div class="w-full h-full flex flex-col space-y-1 justify-center items-start">
                                         <h1 class="font-inter font-semibold">Mercedes</h1>
-                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์เมอร์เซเดส-เบนซ์จากทางเรา</h2>
+                                        <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์เมอร์เซเดสจากทางเรา</h2>
                                     </div>
                                 </a>
                                 <a href="./audi-category.html"
@@ -148,7 +147,7 @@
                     <div id="authentication-state" class="flex flex-row space-x-2 justify-center items-center">
                         <!-- This element will implemented by JavaScript for Authentication Information -->
                     </div>
-                    <a href="#" class="inline-flex items-center">
+                    <a href="./shopping-cart.html" class="inline-flex items-center">
                         <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] text-black"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -230,222 +229,101 @@
 
         </div>
     </header>
-    <!-- End -->
 
-    <!-- Payment information section -->
-    <section class="w-full h-auto bg-inherit">
-        <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
-            <div class="w-full h-full flex flex-row space-x-6 justify-between items-center">
-                <div class="w-full h-full px-[6rem] flex flex-col space-y-3 justify-center items-center">
-                    <button type="button"
-                        class="w-full h-[2.8rem] relative flex rounded-lg transition ease-in-out bg-black hover:bg-opacity-80">
-                        <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/apple_pay.webp"
-                            alt="paypal's brand"
-                            class="w-full h-full object-contain select-none rounded-xl z-0 text-white" />
-                    </button>
-                    <div class="w-full flex py-5 items-center">
-                        <div class="grow border-t border-gray-300"></div>
-                        <span class="flex-shrink mx-4 text-gray-500">หรือ</span>
-                        <div class="grow border-t border-gray-300"></div>
-                    </div>
-                    <form id="shopping-cart-form" class="w-full flex flex-col space-y-7 justify-start items-start">
-                        <span class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                            <label for="email-address" class="font-seeds text-gray-800">อีเมลล์แอดเดรส</label>
-                            <input type="email" name="email-address"
-                                class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                placeholder="โปรดกรอกอีเมลล์แอดเดรสของคุณ" required />
-                        </span>
-                        <span class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                            <label for="name-on-card" class="font-seeds text-gray-800">ชื่อบนบัตร</label>
-                            <input type="text" name="name-on-card"
-                                class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                placeholder="โปรดกรอกชื่อบนบัตรของคุณ" required />
-                        </span>
-                        <span class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                            <label for="card-number" class="font-seeds text-gray-800">หมายเลขบัตร</label>
-                            <input type="text" name="card-number"
-                                class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                placeholder="5412-XXXX-XXXX-XXXX" maxlength="16" required />
-                        </span>
-                        <span class="w-full flex flex-row space-x-6 justify-start items-start">
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="expiration-date" class="font-seeds text-gray-800">วันหมดอายุ (ดด/ปป)</label>
-                                <input type="month" name="expiration-date"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    required />
-                            </div>
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start max-w-[8rem]">
-                                <label for="cvc" class="font-seeds text-gray-800">รหัสความปลอดภัย</label>
-                                <input type="text" name="cvc"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="123" maxlength="3" required />
-                            </div>
-                        </span>
-                        <span class="w-full flex flex-row space-x-6 justify-start items-start">
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="address" class="font-seeds text-gray-800">ที่อยู่ของคำสั่งซื้อ</label>
-                                <input type="text" name="address"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="โปรดกรอกที่อยู่ของคุณ" required />
-                            </div>
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="address" class="font-seeds text-gray-800">เบอร์โทรศัพท์</label>
-                                <input type="text" name="address"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="โปรดกรอกเบอร์โทรศัพท์ของคุณ" maxlength="10" required />
-                            </div>
-                        </span>
-                        <span class="w-full flex flex-row space-x-6 justify-start items-start">
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="city" class="font-seeds text-gray-800">จังหวัด</label>
-                                <input type="text" name="city"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="กรุงเทพมหานคร" required />
-                            </div>
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="cvc" class="font-seeds text-gray-800">เมืองหรือเขต</label>
-                                <input type="text" name="cvc"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="บางเขน" required />
-                            </div>
-                            <div class="w-full flex flex-col space-y-1.5 justify-start items-start">
-                                <label for="cvc" class="font-seeds text-gray-800">รหัสไปรษณีย์</label>
-                                <input type="number" name="cvc"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    placeholder="10220" required />
-                            </div>
-                        </span>
-                        <span class="w-full flex flex-row space-x-1.5 justify-start items-center">
-                            <input type="checkbox" name="billing-address"
-                                class="w-[1.10rem] h-[1.10rem] font-seeds outline-none accent-black" maxlength="16"
-                                checked required />
-                            <label for="billing-address"
-                                class="font-seeds font-semibold text-gray-800">ที่อยู่ของบิลด์คือที่อยู่เดียวกับที่อยู่คำสั่งซื้อ</label>
-                        </span>
-                        <a href="./order-details.html"
-                            class="w-full py-3 flex justify-center items-center rounded-xl transition ease-in-out text-white bg-black hover:bg-opacity-80">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                class="w-[1.2rem] h-[1.2rem]">
-                                <path fill-rule="evenodd"
-                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-                                    clip-rule="evenodd" />
-                            </svg>
+    <!-- Order details section -->
+    <section class="w-full h-auto bg-gray-50">
+        <div class="container h-full px-2 mx-auto border-b max-w-7xl overflow-hidden 1024px:px-0">
+            <div class="w-full h-full my-16 flex flex-col space-y-7 justify-start items-start">
+                <div class="flex flex-col font-seeds justify-start items-start">
+                    <span class="flex flex-row space-x-3 justify-start items-end">
+                        <h1 class="font-semibold text-3xl">คำสั่งซื้อ #7217</h1>
+                        <a href="#"
+                            class="inline-flex text-lg items-center transition ease-in-out text-blue-500 hover:text-blue-700">
+                            <span>ดูใบเสร็จ</span>
                             &nbsp;
-                            <span id="button-total">
-                                <!-- Button total was implemented by JavaScript -->
-                            </span>
-                        </a>
-                        <span class="w-full flex flex-row space-x-2 justify-center items-center text-lg text-gray-400">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                                 class="w-5 h-5">
                                 <path fill-rule="evenodd"
-                                    d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z"
+                                    d="M3.75 12a.75.75 0 01.75-.75h13.19l-5.47-5.47a.75.75 0 011.06-1.06l6.75 6.75a.75.75 0 010 1.06l-6.75 6.75a.75.75 0 11-1.06-1.06l5.47-5.47H4.5a.75.75 0 01-.75-.75z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span>ข้อมูลธุรกรรมจะถูกเก็บเอาไว้ในบัญชีของคุณ</span>
-                        </span>
-                    </form>
+                        </a>
+                    </span>
+                    <span class="text-lg text-gray-500">รายละเอียดเกี่ยวกับการสั่งซื้อที่คุณได้เลือกด้วยตนเอง</span>
                 </div>
-                <div class="w-full h-auto px-4 pt-4 rounded-lg max-w-[32rem] bg-gray-100">
-                    <div id="block-cart-lists"
-                        class="w-full h-auto flex flex-col space-y-2 divide-y justify-start items-start">
-                        <div class="w-full h-[11rem] mb-2 flex flex-row space-x-4 justify-start items-start">
-                            <div class="w-[11rem] h-[11rem] relative flex rounded-md bg-white">
-                                <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/2022-Acura-NSX-Type-S-new-arrivals.webp"
-                                    alt="acura nsx type s" class="w-full object-cover rounded-md z-10 max-h-full" />
-                            </div>
-                            <div class="h-full flex flex-col justify-between items-start max-w-[10rem]">
-                                <div class="w-full h-full flex flex-col font-inter justify-start items-start">
-                                    <h1 class="w-full truncate">Acura NSX Type S</h1>
-                                    <h2 class="w-full truncate">฿5,650,000</h2>
-                                    <h3 class="w-full truncate text-gray-500">V6 3.5L Hybrid bi-Turbo</h3>
-                                    <h4 class="w-full truncate text-gray-500">9-Speed Automated Manual</h4>
+                <div class="w-full h-auto flex flex-col justify-start items-start">
+                    <div class="w-full h-[30rem] p-5 flex flex-row space-x-8 justify-between items-start">
+                        <div class="w-full h-full relative flex max-w-[25rem]">
+                            <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Porsche-Cayenne-Turbo-GT_2.webp"
+                                alt="order-history" class="w-full h-full object-cover select-none rounded-xl z-10"
+                                loading="lazy" />
+                        </div>
+                        <div class="w-full flex flex-col justify-start items-start max-w-full">
+                            <div class="flex flex-col space-y-8 justify-start items-start">
+                                <div class="flex flex-col space-y-4 justify-start items-start">
+                                    <div class="flex flex-col justify-start items-start">
+                                        <h1 class="font-inter font-medium text-xl">Porsche Cayenne Turbo GT</h1>
+                                        <span class="text-gray-600">19,748,063 บาท <span
+                                                class="text-gray-400">(ราคารวมทั้งหมดแล้ว)</span></span>
+                                    </div>
+                                    <span class="text-gray-500">กบยักษ์มีรุ่นย่อยใหม่มาเสริมแล้วในฐานะที่สุดของรุ่นนาม
+                                        Porsche Cayenne Turbo GT
+                                        ซึ่งไม่ได้มีแค่การตกแต่งพิเศษรวมไปถึงสีตัวถังใหม่อย่างสีเทา Arctic Grey เท่านั้น
+                                        แต่ยังพกพาสมรรถนะ 640 แรงม้า</span>
                                 </div>
-                                <div class="w-full h-full flex flex-row space-x-4 font-seeds justify-start items-end">
-                                    <button type="button"
-                                        class="font-semibold transition ease-in-out text-red-500 hover:text-red-700">นำสินค้าออก</button>
+                                <div class="w-full mb-6 pb-8 flex flex-row border-b justify-between items-start">
+                                    <div class="w-full flex flex-col space-y-2 justify-start items-start">
+                                        <h1 class="font-inter font-medium">Delivery address</h1>
+                                        <span class="w-64 text-gray-500">
+                                            89/799, หมู่ 5, ถนน กาญจนาภิเษก, อำเภอ บางใหญ่, ตำบล บางแม่นาง, จังหวัด
+                                            นนทบุรี
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="w-full flex flex-col space-y-2.5 justify-start items-start max-w-[34rem]">
+                                        <h1 class="font-inter font-medium">Shipping updates</h1>
+                                        <span class="text-gray-500">e**@gmail.com</span>
+                                        <span class="text-gray-500">1*********17</span>
+                                        <button type="button"
+                                            class="text-blue-500 transition ease-in-out hover:text-blue-700">แก้ไขข้อมูล</button>
+                                    </div>
+                                </div>
+                                <div class="w-full h-auto flex flex-col justify-start items-start">
+                                    <div class="w-full relative pt-1">
+                                        <div class="flex mb-2 items-center justify-between">
+                                            <div>
+                                                <span
+                                                    class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                                    Processing
+                                                </span>
+                                            </div>
+                                            <div class="text-right">
+                                                <span class="text-xs font-semibold inline-block text-green-600">
+                                                    30%
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                                            <div style="width:30%"
+                                                class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="text-gray-600">
+                                        กำลังประมวลผล ณ วันที่ พฤศจิกายน 18, 2022
+                                    </span>
                                 </div>
                             </div>
                         </div>
-                        <!-- For other product cart that was implemented by JavaScript -->
-                    </div>
-                    <hr class="my-6" />
-                    <div class="w-full flex flex-col space-y-6 justify-start items-start">
-                        <div class="w-full flex flex-col justify-start items-start">
-                            <span>โค้ดส่วนลด</span>
-                            <form class="w-full flex flex-row space-x-6 justify-start items-start" method="post">
-                                <input type="text" name="discount-code"
-                                    class="w-full px-3 py-2 font-seeds border rounded-md shadow-sm outline-none text-gray-600"
-                                    maxlength="10" required />
-                                <button type="button"
-                                    class="w-full py-2 rounded-lg transition ease-in-out text-gray-600 bg-gray-300 max-w-[6rem] hover:opacity-80">ใช้โค้ด</button>
-                            </form>
-                        </div>
-                        <div class="w-full flex flex-col space-y-3 justify-start items-start">
-                            <span class="w-full flex flex-row justify-between items-start">
-                                <h1 class="text-neutral-500">ผลรวมย่อย</h1>
-                                <span id="sub-total" class="font-semibold text-sm text-gray-600">
-                                    <!-- Sub total was implemented by JavaScript -->
-                                </span>
-                            </span>
-                            <span class="w-full flex flex-row justify-between items-start">
-                                <span class="flex flex-row space-x-2 justify-start items-center">
-                                    <h1 class="text-neutral-500">ส่วนลด</h1>
-                                    <h2 class="p-1.5 font-inter rounded-xl text-xs text-gray-600 bg-gray-200">NEWBIECODE
-                                    </h2>
-                                </span>
-                                <span class="font-semibold text-sm text-green-600">-฿153,000</span>
-                            </span>
-                            <span class="w-full flex flex-row justify-between items-start">
-                                <h1 class="text-neutral-500">ค่าขนส่ง</h1>
-                                <span class="font-semibold text-sm text-red-600">+฿1,063</span>
-                            </span>
-                        </div>
-                    </div>
-                    <hr class="my-4" />
-                    <div
-                        class="w-full mb-4 flex flex-row font-seeds font-semibold text-lg justify-between items-center">
-                        <h1>ราคารวม</h1>
-                        <span id="total">
-                            <!-- Total was implemented by JavaScript -->
-                        </span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End -->
-
-    <!-- Other interesting products -->
-    <section class="w-full h-[45rem] bg-inherit">
-        <div class="container h-full px-2 mx-auto max-w-7xl overflow-hidden 1024px:px-0">
-            <hr class="my-8" />
-            <div class="w-full flex flex-col space-y-4 justify-center items-center">
-                <div class="w-full flex flex-row justify-between items-center">
-                    <h1 class="font-semibold text-2xl">รถยนต์คันอื่นที่คุณอาจจะชอบ</h1>
-                    <a href="#"
-                        class="inline-flex items-center text-lg transition ease-in-out text-blue-500 hover:opacity-75">
-                        <span>ดูทั้งหมด</span>&nbsp;
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="w-[24px] h-[24px] 280px:w-[15px] 280px:h-[15px]">
-                            <path fill-rule="evenodd"
-                                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-                <div id="other-interesting-products"
-                    class="grid grid-cols-4 gap-3 justify-items-center content-center place-content-center">
-                    <!-- Other interesting products was implemented by JavaScript -->
-                </div>
-            </div>
-        </div>
     </section>
     <!-- End -->
 
     <!-- Footer Bar -->
-    <footer class="w-full h-auto pb-6 bg-white">
-        <div class="container h-full mx-auto px-3 border-t max-w-7xl overflow-hidden 1024px:px-0">
+    <footer class="w-full h-auto pb-6 border-t bg-white">
+        <div class="container h-full mx-auto px-3 max-w-7xl overflow-hidden 1024px:px-0">
             <div class="flex flex-col justify-center items-center">
                 <div
                     class="my-16 w-full h-full grid grid-cols-1 gap-y-10 gap-x-[5rem] font-normal text-base text-gray-500 justify-items-start 768px:grid-cols-2 768px:w-[30rem] 768px:gap-x-[12rem] 912px:w-full 912px:my-20 912px:grid-cols-4 912px:gap-y-0 912px:text-lg 912px:space-y-0">
@@ -548,94 +426,6 @@
         import RegistrationPage from './registration.html';
         import AuthenticationPage from './authentication.html';
 
-        const shoppingCartForm = document.getElementById('shopping-cart-form');
-
-        const blockCartLists = document.getElementById('block-cart-lists');
-
-        const carImageCartElement = document.getElementById('car-image');
-        const carNameCartElement = document.getElementById('car-name');
-        const carPriceCartElement = document.getElementById('car-price');
-        const carEngineTypeCartElement = document.getElementById('engine-type');
-        const carTransmissionSpeedCartElement = document.getElementById('transmission-speeds');
-
-        const buttonTotalCartElement = document.getElementById('button-total');
-        const subTotalCartElement = document.getElementById('sub-total');
-        const totalCartElement = document.getElementById('total');
-
-        const SelectedCarBrand = localStorage.getItem('brand');
-        const SelectedCarName = localStorage.getItem('car_name');
-        const SelectedCarPrice = parseFloat(localStorage.getItem('raw_price_car'));
-        const SelectedEngineType = localStorage.getItem('engine_type');
-        const SelectedCarImage = localStorage.getItem('image_url');
-        const SelectedTransmissionSpeeds = localStorage.getItem('transmission_speeds');
-        const AcuraNSXTypeSPrice = 5_650_000;
-        const DiscountOfPrice = 153_000;
-        const ShippingCost = 1_063;
-
-        const CarImageElement = `<img src="${SelectedCarImage}" alt="acura nsx type s" class="w-full object-cover rounded-md z-10 max-h-full" />`;
-
-        const OtherInterestingProducts = [
-            {
-                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Volkswagen-Scrirocco-interesting.webp',
-                alt: 'Volkswagen Scirocco',
-                carName: 'Volkswagen Scirocco',
-                engineType: 'Inline-four Engine 2.0L Turbo',
-                carPrice: 2395000
-            },
-            {
-                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Mercedes-Benz-X-Class-interesting.webp',
-                alt: 'Mercedes-Benz X-Class',
-                carName: 'Mercedes-Benz X-Class',
-                engineType: 'Inline-four Engine 2.3L Twin Turbo',
-                carPrice: 3990000
-            },
-            {
-                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/2018-Lexus-LC-500-interesting.webp',
-                alt: 'Lexus LC500',
-                carName: 'Lexus LC500',
-                engineType: 'V8 5.0L',
-                carPrice: 16950000
-            },
-            {
-                imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Toyota-Gr-Suprainteresting.webp',
-                alt: 'Toyota GR Supra RZ',
-                carName: 'Toyota GR Supra RZ',
-                engineType: 'V6 3.0L Twin Scroll Turbo',
-                carPrice: 4999000
-            }
-        ];
-
-        function onOtherInterestingProductsLoader() {
-            const OtherInterestingProductElement = document.getElementById('other-interesting-products');
-            let products = ``;
-
-            OtherInterestingProducts.map((object) => {
-                products += `
-                <div class="w-[19.45rem] h-[36rem] flex flex-col space-y-3 justify-start items-start rounded-xl">
-                    <div class="w-full h-[26rem] relative flex rounded-xl">
-                        <div class="w-full h-full absolute inset-0 rounded-xl bg-gradient-to-t from-neutral-900 via-transparent to-transparent z-20"></div>
-                        <img src="${object.imageUrl}" alt="${object.alt}" class="w-full h-full object-cover select-none rounded-xl z-10" loading="lazy" />
-                        <div class="w-full h-full absolute inset-0 rounded-xl bg-neutral-400 animate-pulse z-0"></div>
-                    </div>
-                    <div class="w-full h-auto flex flex-col space-y-7 justify-start items-start">
-                        <div class="w-full flex flex-row justify-between">
-                            <span class="flex flex-col justify-start items-start">
-                                <h1 class="font-inter text-base font-medium">${object.carName}</h1>
-                                <p class="font-light text-xs text-gray-600">${object.engineType}</p>
-                            </span>
-                            <span>
-                                ${object.carPrice.toLocaleString()} บาท
-                            </span>
-                        </div>
-                        <a href="#" class="w-full py-2 flex font-medium rounded-md justify-center items-center transition ease-in-out text-white bg-black hover:bg-opacity-80">ดูรายละเอียด</a>
-                    </div>
-                </div>
-                `;
-            });
-
-            OtherInterestingProductElement.innerHTML = products.trim();
-        }
-
         function ResponsivedNavigationBar() {
             if (document.getElementById('modular-dropdown-menu').classList.contains('hidden')) {
                 document.getElementById('modular-dropdown-menu').classList.remove('hidden');
@@ -670,7 +460,7 @@
         function useUnauthorizedAction() {
             const buttonElement = document.createElement('button');
             const classNames = splitClassNames(
-                'text-gray-600 transition ease-in-out hover:text-red-400',
+                'text-stone-600 transition ease-in-out hover:text-red-400',
             );
             classNames.map((className) => {
                 buttonElement.classList.add(className);
@@ -771,62 +561,11 @@
             return buttonElement;
         }
 
-        function BlockCart() {
-            const divElement = document.createElement('div');
-            const classNames = splitClassNames(
-                'w-full h-[11rem] pt-4 flex flex-row space-x-4 justify-start items-start',
-            );
-            classNames.map((className) => {
-                divElement.classList.add(className);
-            });
-            divElement.innerHTML = `
-            <div id="car-image" class="w-[11rem] h-[11rem] relative flex rounded-md bg-white">
-                <img src="${SelectedCarImage}" alt="acura nsx type s" class="w-full object-cover rounded-md z-10 max-h-full" />
-            </div>
-            <div class="h-full flex flex-col justify-between items-start max-w-[10rem]">
-                <div class="w-full h-full flex flex-col font-inter justify-start items-start">
-                    <h1 id="car-name" class="w-full truncate">
-                        ${SelectedCarBrand + ' ' + SelectedCarName}
-                    </h1>
-                    <h2 id="car-price" class="w-full truncate">
-                        ${'฿' + SelectedCarPrice.toLocaleString()}
-                    </h2>
-                    <h3 id="engine-type" class="w-full truncate text-gray-500">
-                        ${SelectedEngineType}
-                    </h3>
-                    <h4 id="transmission-speeds" class="w-full truncate text-gray-500">
-                        ${SelectedTransmissionSpeeds}
-                    </h4>
-                </div>
-                <div class="w-full h-full flex flex-row space-x-4 font-seeds justify-start items-end">
-                    <button type="button" class="font-semibold transition ease-in-out text-red-500 hover:text-red-700">นำสินค้าออก</button>
-                </div>
-            </div>
-            `.trim();
-
-            return divElement
-        }
-
-        var shoppingCartRootElement = document.getElementById('shopping-cart-root');
+        var orderDetailsRootElement = document.getElementById('order-details-root');
         var authenticationElement = document.getElementById('authentication-state');
         var responsivedAuthenticationElement = document.getElementById('responsived-authentication-element');
 
         window.addEventListener('load', (event) => {
-            if (localStorage.getItem('image_url') && localStorage.getItem('car_name')) {
-                blockCartLists.appendChild(BlockCart());
-
-                buttonTotalCartElement.textContent = (((SelectedCarPrice + AcuraNSXTypeSPrice) + ShippingCost) - DiscountOfPrice).toLocaleString() + '฿'
-
-                subTotalCartElement.textContent = '฿' + (SelectedCarPrice + AcuraNSXTypeSPrice).toLocaleString();
-                totalCartElement.textContent = (((SelectedCarPrice + AcuraNSXTypeSPrice) + ShippingCost) - DiscountOfPrice).toLocaleString() + '฿'
-            } else {
-                buttonTotalCartElement.textContent = ((AcuraNSXTypeSPrice + ShippingCost) - DiscountOfPrice).toLocaleString() + '฿'
-
-                subTotalCartElement.textContent = '฿' + AcuraNSXTypeSPrice.toLocaleString();
-                totalCartElement.textContent = ((AcuraNSXTypeSPrice + ShippingCost) - DiscountOfPrice).toLocaleString() + '฿'
-            }
-
-            onOtherInterestingProductsLoader();
             onAsyncFooterHyperlinkRender();
 
             if (localStorage.getItem('authorized')) {
@@ -835,10 +574,10 @@
                 responsivedAuthenticationElement.innerHTML = `<a href="./order-history.html">${localStorage.getItem('email_address')}</a>`.trim();
                 responsivedAuthenticationElement.appendChild(useResponsivedUnauthorizedAction());
 
-                shoppingCartRootElement.classList.remove('hidden');
-                shoppingCartRootElement.classList.toggle('block');
+                orderDetailsRootElement.classList.remove('hidden');
+                orderDetailsRootElement.classList.toggle('block');
             } else {
-                window.location.href = './authentication.html';
+                window.location.href = AuthenticationPage;
             }
         });
 
