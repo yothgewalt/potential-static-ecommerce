@@ -93,7 +93,7 @@ export const FirstPartOfPorsche = [
 
 export const SecondPartOfPorsche = [
     {
-        imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/Porsche-Cayenne-Turbo-GT_2.webp',
+        imageUrl: 'https://potential-static-ecommerce.ap-south-1.linodeobjects.com/porsche-cayenne-turbo-gt-south-africa-review-test-zero2turbo-arctic-grey-gold-wheels-2hero-scaled.webp',
         alt: 'Porche Cayenne Turbo GT',
         brand: 'Porche',
         carName: 'Cayenne Turbo GT',
@@ -145,8 +145,8 @@ export const SecondPartOfPorsche = [
         driveTrain: 'AWD',
         engineType: '2Motor',
         fuelSystem: 'Electric',
-        maximumHorsePower: '761',
-        maximumTorque: '1050',
+        maximumHorsePower: '761 HP',
+        maximumTorque: '1050 NM',
         TransmissionSpeeds: 'Automatic 2 Speed',
         description: 'ระบบช่วยควบคุมรถให้อยู่ในช่องจราจร Lane Change Assistระบบรักษารถให้อยู่ในช่องจราจร Lane Keeping Assistระบบเตือนป้ายจราจร Traffic Sign Recognitionเซนเซอร์กะระยะช่วยจอดด้านหน้าเซนเซอร์กะระยะช่วยจอดด้านหลังกล้องมองภาพรอบคัน Surround Viewระบบตรวจแรงดันลมยาง Tyre Pressure Monitoring+ PREMIUM PLUS Package ราคาเริ่มต้น 6,360,000 บาทSport Chrono Package including mode switchระบบเสียง Porsche Electric Sport Sound',
         priceCar: 12000000,
@@ -183,4 +183,3 @@ export const SecondPartOfPorsche = [
         carAvailable: 4,
     },
 ];
- RS
