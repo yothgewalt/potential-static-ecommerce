@@ -108,6 +108,10 @@
     }
 }
 
+* {
+    @apply focus:outline-none;
+}
+
 :root {
     font-family: 'Seed Sans', Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;

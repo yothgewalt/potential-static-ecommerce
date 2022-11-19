@@ -105,7 +105,7 @@
                                         <h2 class="font-seeds text-gray-500">เลือกดูรถยนต์ลัมโบร์กีนีจากทางเรา</h2>
                                     </div>
                                 </a>
-                                <a href="./mercedes-benz-category.html"
+                                <a href="./mercedes-category.html"
                                     class="w-full h-[5rem] p-2 flex flex-row space-x-2.5 rounded-xl justify-between items-center transition ease-in-out hover:bg-gray-100">
                                     <div class="w-full h-full p-2 relative flex rounded-xl max-w-[4rem] bg-neutral-200">
                                         <img src="https://potential-static-ecommerce.ap-south-1.linodeobjects.com/mercedes-logo.svg.png"
@@ -148,7 +148,7 @@
                     <div id="authentication-state" class="flex flex-row space-x-2 justify-center items-center">
                         <!-- This element will implemented by JavaScript for Authentication Information -->
                     </div>
-                    <a href="#" class="inline-flex items-center">
+                    <a href="./shopping-cart.html" class="inline-flex items-center">
                         <svg class="w-[16px] h-[16px] 360px:w-[18px] 360px:h-[18px] text-black"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
@@ -161,9 +161,8 @@
                         </span>
                     </a>
                 </div>
-                <button type="menu" id="navigation-menu"
-                    class="dropdown-modular-button block focus:outline-none 1024px:hidden"
-                    onclick="() => onDropdown();">
+                <button type="menu" id="responsived-navigation-menu"
+                    class="dropdown-modular-button block focus:outline-none 1024px:hidden">
                     <svg class="w-[20px] h-[20px] 360px:w-[24px] 360px:h-[24px] 768px:w-[28px] 768px:h-[28px]"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
@@ -175,8 +174,61 @@
 
             <!-- Navigation Menu with Responsived -->
             <div id="modular-dropdown-menu"
-                class="hidden dropdown-modular w-full h-[20rem] absolute inset-x-0 top-[2.97rem] backdrop-blur-lg shadow-lg glassmorphism">
-                Dropdown
+                class="hidden w-full h-auto px-2.5 absolute inset-x-0 top-[2.97rem] border-b shadow-lg bg-white 1024px:hidden">
+                <div class="w-full h-full flex flex-col divide-y justify-start items-start">
+                    <span class="w-full py-3">
+                        <a href="#" class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            &nbsp;
+                            <span>แบรนด์รถยนต์</span>
+                        </a>
+                    </span>
+                    <span class="w-full py-3">
+                        <a href="#" class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            &nbsp;
+                            <span>แต่งรถยนต์</span>
+                        </a>
+                    </span>
+                    <span class="w-full py-3">
+                        <a href="#" class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            &nbsp;
+                            <span>บริการซื้อขาย</span>
+                        </a>
+                    </span>
+                    <span class="w-full py-3">
+                        <a href="#" class="inline-flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="w-5 h-5">
+                                <path fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            &nbsp;
+                            <span>ศูนย์ช่วยเหลือ</span>
+                        </a>
+                    </span>
+                    <span id="responsived-authentication-element"
+                        class="w-full py-3 flex flex-col space-y-2 justify-center items-center">
+                        <!-- Responsived Authentication Element was implemented by JavaScript -->
+                    </span>
+                </div>
             </div>
             <!-- End -->
 
@@ -190,18 +242,17 @@
             <div id="previous-page" class="my-4 flex justify-start items-start">
                 <!-- Previous page was implemented by JavaScript -->
             </div>
-            <div
-                class="w-full h-[60rem] flex flex-row space-x-8 justify-between items-center max-h-[60rem] overflow-hidden">
+            <div class="w-full h-[65.5rem] flex flex-row space-x-8 justify-between items-center overflow-hidden">
                 <div id="product-preview-image" class="w-full h-full rounded-xl relative flex max-w-[50%]">
                     <!-- Product image was implemented by JavaScript -->
                 </div>
                 <div class="w-full h-full border-b bg-inherit max-w-[50%] max-h-full">
                     <div class="w-full flex flex-row font-inter justify-between items-start">
                         <span class="flex flex-col justify-start items-start">
-                            <h1 id="product-name" class="text-2xl font-semibold">
+                            <h1 id="product-name" class="w-[22rem] truncate text-2xl font-semibold">
                                 <!-- Product name was implemented by JavaScript -->
                             </h1>
-                            <span id="engine-type" class="font-light text-xl text-gray-500">
+                            <span id="engine-type" class="w-[22rem] truncate font-light text-xl text-gray-500">
                                 <!-- Enginet type was implemented by JavaScript -->
                             </span>
                         </span>
@@ -209,8 +260,10 @@
                             <!-- Product price was implemented by JavaScript -->
                         </span>
                     </div>
-                    <div class="w-full h-[10rem] mt-10 mb-0 flex flex-col space-y-2 justify-start items-start">
-                        <h1 class="font-seeds font-bold text-2xl">รายละเอียดรถยนต์</h1>
+                    <div class="w-full h-[9.5rem] mt-10 mb-0 flex flex-col space-y-2 justify-start items-start">
+                        <h1 class="flex flex-row space-x-2 font-seeds font-bold text-2xl justify-start items-start">
+                            รายละเอียดรถยนต์&nbsp;<span
+                                class="font-normal text-sm text-neutral-500">(เลื่อนเพื่ออ่าน)</span></h1>
                         <p id="product-description"
                             class="font-seeds font-normal text-lg overflow-y-auto text-neutral-500">
                             <!-- Product description was implemented by JavaScript -->
@@ -251,6 +304,14 @@
                                     <h1 class="text-gray-500">Engine Type</h1>
                                     <span id="second-engine-type" class="font-bold text-xl">
                                         <!-- Engine Type was implemented by JavaScript -->
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="flex flex-row space-x-10 justify-start items-start">
+                                <span class="flex flex-col justify-start items-start">
+                                    <h1 class="text-gray-500">Transmission Speeds</h1>
+                                    <span id="transmission-speeds" class="w-[32rem] truncate font-bold text-xl">
+                                        <!-- Transmission Speeds was implemented by JavaScript -->
                                     </span>
                                 </span>
                             </div>
@@ -296,7 +357,7 @@
                         </div>
                     </div>
                     <div class="w-full h-[9.3rem] mt-[1.6rem] flex justify-center items-end">
-                        <a href="#"
+                        <a href="./shopping-cart.html"
                             class="w-full h-full flex rounded-xl justify-center items-center transition ease-in-out text-white bg-black hover:opacity-90">
                             <span class="flex flex-col justify-center items-center">
                                 <h1 class="font-bold text-2xl">เลือกซื้อรถยนต์</h1>
@@ -435,6 +496,7 @@
     <!-- End -->
     <script type="text/javascript">
         let authenticationElement = document.getElementById('authentication-state');
+        var responsivedAuthenticationElement = document.getElementById('responsived-authentication-element');
         let cartCounterElement = document.getElementById('cart-counter');
 
         let previousPageElement = document.getElementById('previous-page');
@@ -449,6 +511,19 @@
         let maximumTorqueElement = document.getElementById('maximum-torque');
         let maximumHorsePowerElement = document.getElementById('maximum-horse-power');
         let secondEngineTypeElement = document.getElementById('second-engine-type');
+        let transmissionSpeedElement = document.getElementById('transmission-speeds');
+
+        function ResponsivedNavigationBar() {
+            if (document.getElementById('modular-dropdown-menu').classList.contains('hidden')) {
+                document.getElementById('modular-dropdown-menu').classList.remove('hidden');
+                document.getElementById('modular-dropdown-menu').classList.toggle('block')
+            } else {
+                document.getElementById('modular-dropdown-menu').classList.remove('block');
+                document.getElementById('modular-dropdown-menu').classList.toggle('hidden');
+            }
+        }
+
+        document.getElementById('responsived-navigation-menu').addEventListener('click', ResponsivedNavigationBar);
 
         function PopoverAction() {
             if (document.getElementById('popover-brand-modular').classList.contains('hidden')) {
@@ -777,6 +852,59 @@
             return buttonElement;
         }
 
+        function useResponsivedAuthenticationButton() {
+            const buttonElement = document.createElement('button');
+
+            const classNames = splitClassNames(
+                'w-full py-3 rounded-xl text-white transition ease-in-out bg-black hover:opacity-90',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.textContent = 'เข้าสู่ระบบด้วยอีเมลล์'
+            buttonElement.addEventListener('click', () => window.location.href = AuthenticationPage);
+
+            return buttonElement
+        }
+
+        function useResponsivedRegistrationButton() {
+            const buttonElement = document.createElement('button');
+
+            const classNames = splitClassNames(
+                'w-full py-3 rounded-xl transition ease-in-out text-neutral-700 bg-neutral-200 hover:opacity-90',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.textContent = 'สมัครสมาชิกด้วยอีเมลล์'
+            buttonElement.addEventListener('click', () => window.location.href = RegistrationPage);
+
+            return buttonElement
+        }
+
+        function useResponsivedUnauthorizedAction() {
+            const buttonElement = document.createElement('button');
+            const classNames = splitClassNames(
+                'w-full py-3 flex rounded-xl justify-center items-center transition ease-in-out text-white bg-red-500 hover:text-red-400',
+            );
+            classNames.map((className) => {
+                buttonElement.classList.add(className);
+            });
+            buttonElement.type = 'button';
+            buttonElement.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[16px] h-[16px] 360px:w-[20px] 360px:h-[20px]">
+                <path stroke-linecap=" round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+            </svg>
+            &nbsp;
+            <span>ออกจากระบบ</span>
+            `;
+            buttonElement.addEventListener("click", () => dropAuthorizedTokenAction());
+
+            return buttonElement;
+        }
+
         function usePreviousPageButton(href) {
             const buttonElement = document.createElement('button');
 
@@ -814,8 +942,8 @@
                     previousPageElement.appendChild(usePreviousPageButton('./pages/mclaren-category.html'));
                 } else if (localStorage.getItem('from_page') === 'lamborghini') {
                     previousPageElement.appendChild(usePreviousPageButton('./pages/lamborghini-category.html'));
-                } else if (localStorage.getItem('from_page') === 'mercedes-benz') {
-                    previousPageElement.appendChild(usePreviousPageButton('./pages/mercedes-benz-category.html'));
+                } else if (localStorage.getItem('from_page') === 'mercedes') {
+                    previousPageElement.appendChild(usePreviousPageButton('./pages/mercedes-category.html'));
                 } else if (localStorage.getItem('from_page') === 'audi') {
                     previousPageElement.appendChild(usePreviousPageButton('./pages/audi-category.html'));
                 } else {
@@ -867,6 +995,12 @@
                 maximumHorsePowerElement.textContent = 'ไม่พบข้อมูล';
             }
 
+            if (localStorage.getItem('transmission_speeds')) {
+                transmissionSpeedElement.textContent = localStorage.getItem('transmission_speeds');
+            } else if (localStorage.getItem('transmission_speeds') === '') {
+                transmissionSpeedElement.textContent = 'ไม่พบข้อมูล';
+            }
+
             if (localStorage.getItem('price_car')) {
                 productPriceElement.textContent = localStorage.getItem('price_car') + ' บาท';
             } else if (localStorage.getItem('price_car').length === 0) {
@@ -884,10 +1018,14 @@
             if (localStorage.getItem('authorized')) {
                 authenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
                 authenticationElement.appendChild(useUnauthorizedAction());
+                responsivedAuthenticationElement.innerHTML = `<p class="cursor-pointer">${localStorage.getItem('email_address')}</p>`.trim();
+                responsivedAuthenticationElement.appendChild(useResponsivedUnauthorizedAction());
                 cartCounterElement.innerHTML = `2`;
             } else {
                 authenticationElement.appendChild(useRegistrationButton());
                 authenticationElement.appendChild(useAuthenticationButton());
+                responsivedAuthenticationElement.appendChild(useResponsivedAuthenticationButton());
+                responsivedAuthenticationElement.appendChild(useResponsivedRegistrationButton());
                 cartCounterElement.innerHTML = `0`;
             }
         });
