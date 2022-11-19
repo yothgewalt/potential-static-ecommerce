@@ -40,7 +40,7 @@ export const FirstPartOfPorsche = [
         maximumHorsePower: '450 HP @ 6500 RPM',
         maximumTorque: '530 NM @ 2300-5000 RPM',
         TransmissionSpeeds: 'PDk 8 Speed',
-        description: 'Carrera Sอัตราเร่ง 0-100 km/h ภายใน 3.5 วินาทีความเร็วสูงสุด Top Speed 308 km/hCarrera 4Sอัตราเร่ง 0-100 km/h ภายใน 3.4 วินาทีความเร็วสูงสุด Top Speed 306 km/h Dimension มิติตัวถังยาว 4,519 มิลลิเมตกว้าง 1,852 มิลลิเมตรสูง 1,300 มิลลิเมตรระยะฐานล้อ wheelbase 2,450 มิลลิเมตรระยะห่างล้อคู่หน้า 1,589 / คู่หลัง 1,557 มิลลิเมตรสัมประสิทธิ์แรงเสียดทาน cd = 0.29รายละเอียด Option เบื้องต้นของ 911 Carrera S / 4S เวอร์ชั่นไทย' ,
+        description: 'Carrera Sอัตราเร่ง 0-100 km/h ภายใน 3.5 วินาทีความเร็วสูงสุด Top Speed 308 km/hCarrera 4Sอัตราเร่ง 0-100 km/h ภายใน 3.4 วินาทีความเร็วสูงสุด Top Speed 306 km/h Dimension มิติตัวถังยาว 4,519 มิลลิเมตกว้าง 1,852 มิลลิเมตรสูง 1,300 มิลลิเมตรระยะฐานล้อ wheelbase 2,450 มิลลิเมตรระยะห่างล้อคู่หน้า 1,589 / คู่หลัง 1,557 มิลลิเมตรสัมประสิทธิ์แรงเสียดทาน cd = 0.29รายละเอียด Option เบื้องต้นของ 911 Carrera S / 4S เวอร์ชั่นไทย',
         priceCar: 12810000,
         carAvailable: 3,
     },
@@ -183,4 +183,3 @@ export const SecondPartOfPorsche = [
         carAvailable: 4,
     },
 ];
- RS
