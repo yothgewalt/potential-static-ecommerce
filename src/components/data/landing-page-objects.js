@@ -38,9 +38,9 @@ export const Brands = [
     },
     {
         imageUrl: MercedesBenzChairmanImage,
-        alt: "mercedes benz's branding",
-        href: './pages/mercedes-benz-category.html',
-        brandName: 'Mercedes Benz',
+        alt: "mercedes's branding",
+        href: './pages/mercedes-category.html',
+        brandName: 'Mercedes',
     },
     {
         imageUrl: AudoR8V10Image,

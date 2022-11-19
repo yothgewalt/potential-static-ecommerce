@@ -19,7 +19,7 @@ export default function ProductCardTemplate(
     <img src="${imageUrl}" alt="${alternative}" class="w-full h-full rounded-xl select-none object-cover z-10" loading="lazy" />
     <div class="w-full flex flex-row justify-between items-start">
         <span class="flex flex-col justify-start items-start">
-            <h1 class="font-inter font-semibold">
+            <h1 class="w-[16rem] truncate font-inter font-semibold text-start">
                 ${carName}
             </h1>
             <p class="font-inter font-light text-gray-600">

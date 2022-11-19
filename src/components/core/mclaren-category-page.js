@@ -9,7 +9,7 @@ function withFirstPartOfMcLarenLoader() {
         FirstPartOfMcLarenElement.appendChild(ProductCardTemplate(
             object.imageUrl, object.alt, object.brand, object.carName, object.driveTrain,
             object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
-            object.TranmissionSpeeds, object.description, object.priceCar, object.carAvailable,
+            object.TransmissionSpeeds, object.description, object.priceCar, object.carAvailable,
             'mclaren',
         ));
     });
@@ -20,7 +20,7 @@ function withSecondPartOfMcLarenLoader() {
         SecondPartOfMcLarenElement.appendChild(ProductCardTemplate(
             object.imageUrl, object.alt, object.brand, object.carName, object.driveTrain,
             object.engineType, object.fuelSystem, object.maximumHorsePower, object.maximumTorque,
-            object.TranmissionSpeeds, object.description, object.priceCar, object.carAvailable,
+            object.TransmissionSpeeds, object.description, object.priceCar, object.carAvailable,
             'mclaren',
         ));
     });
