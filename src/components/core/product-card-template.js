@@ -40,7 +40,7 @@ export default function ProductCardTemplate(
         imageUrl, alternative, brand, carName, driveTrain,
         engineType, fuelSystem, maximumHorsePower, maximumTorque,
         transmissionSpeeds, description, priceToLocaleString, carAvailable,
-        fromPage,
+        priceCar, fromPage,
     ));
 
     return buttonElement;
